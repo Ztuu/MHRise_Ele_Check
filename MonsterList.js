@@ -1,9 +1,11 @@
 monster_list = [{
   name: "Great Izuchi",
-  color: "#d6a100"
+  color: "#d6a100",
+  data_missing: true
 }, {
   name: "Mizutsune",
-  color: "#ffc4fd"
+  color: "#ffc4fd",
+  data_missing: false
 }, {
   name: "Test",
   color: ""

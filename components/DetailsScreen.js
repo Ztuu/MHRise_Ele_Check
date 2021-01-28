@@ -20,9 +20,13 @@ export default function DetailsScreen({route}) {
   return (
     <View style={styles.container}>
       <Text>Name: {monster.name}</Text>
-      {(monster.color != "" && monster.color != undefined) && <Text style={{color: monster.color ? monster.color : "#000000"}}>
-        Color: {monster.color}
-      </Text>}
+
+      {
+        (monster.data_missing === true || monster.data_missing === undefined) &&
+        <Text>
+          Data is Missing!
+        </Text>
+      }
     </View>
   );
 }
