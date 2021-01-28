@@ -39,6 +39,23 @@ monster_list = [{
     "lightning": true,
     "water": false
   }
+},
+{
+  name: "Test All Icons",
+  color: "",
+  data_missing: false,
+  weakness: {
+    "dragon": true,
+    "fire": true,
+    "lightning": true,
+    "water": true
+  },
+  resist: {
+    "dragon": true,
+    "fire": true,
+    "lightning": true,
+    "water": true
+  }
 }];
 
 for(let i=0; i<monster_list.length; i++){
