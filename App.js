@@ -28,7 +28,7 @@ export default function App() {
         }}>
         <Stack.Screen name="List" component={ListScreen}
           options={{
-              title: 'My home',
+              title: 'Monster Hunter Rise',
               headerTitleStyle: {
                 alignSelf: 'center',
               }
