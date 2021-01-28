@@ -34,7 +34,7 @@ export default function ListScreen() {
   return (
     <View style={styles.container}>
       {monster_rows.map(monster => (
-        <MonsterRow key={monster.id} monster_id={monster.id} />
+        <MonsterRow key={monster.id} monster_id={monster.id} monster_name={monster.name} />
       ))}
     </View>
   );
