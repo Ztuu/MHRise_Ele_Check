@@ -1,10 +1,18 @@
 // External imports
 import React, {useEffect} from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 
 // Internal imports
 import {monster_dict} from '../MonsterList'
+
+var screenWidth = Dimensions.get('window').width; //full width
+const elementIcons = {
+  dragon: require("../assets/element_icons/dragon.png"),
+  fire: require("../assets/element_icons/fire.png"),
+  lightning: require("../assets/element_icons/lightning.png"),
+  water: require("../assets/element_icons/water.png"),
+}
 
 function DetailDisplay(props) {
   const monster_id = props.monster_id;
@@ -13,13 +21,32 @@ function DetailDisplay(props) {
   if(monster.weakness){
     return (
       <View>
-        <Text style={styles.heading}>Weaknesses</Text>
+        <Text style={styles.subHeading}>Weaknesses</Text>
         {Object.keys(monster.weakness).map((key)  => (
           <>
-          {monster.weakness[key] === true && <Text>{key}</Text>}
+          {monster.weakness[key] === true &&
+            <View style={{flexDirection: "row", alignItems: "center",}}>
+              <Image
+                style={styles.elementIcon}
+                source={elementIcons[key]} />
+              <Text>{key}</Text>
+            </View>
+          }
           </>
         ))}
-        <Text style={styles.heading}>Resists</Text>
+        <Text style={styles.subHeading}>Resists</Text>
+        {Object.keys(monster.resist).map((key)  => (
+          <>
+          {monster.resist[key] === true &&
+            <View style={{flexDirection: "row", alignItems: "center",}}>
+              <Image
+                style={styles.elementIcon}
+                source={elementIcons[key]} />
+              <Text>{key}</Text>
+            </View>
+          }
+          </>
+        ))}
       </View>
     )
   }else{
@@ -49,7 +76,7 @@ export default function DetailsScreen({route}) {
 
   return (
     <View style={styles.container}>
-      <Text>Name: {monster.name}</Text>
+      <Text style={styles.mainHeading}>Name: {monster.name}</Text>
       {data_display}
     </View>
   );
@@ -59,10 +86,18 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#cfcfcf',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingHorizontal: screenWidth/15,
+    paddingTop: 15,
   },
-  heading: {
+  mainHeading: {
+    fontWeight: "bold",
+    fontSize: 25,
+    paddingBottom: 10,
+  },
+  subHeading: {
     fontWeight: "bold"
+  },
+  elementIcon: {
+    width: 50, height: 50
   }
 });

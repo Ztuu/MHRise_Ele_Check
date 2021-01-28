@@ -13,10 +13,16 @@ monster_list = [{
   color: "#ffc4fd",
   data_missing: false,
   weakness: {
-    "lightning": true,
     "dragon": true,
     "fire": false,
+    "lightning": true,
     "water": false
+  },
+  resist: {
+    "dragon": false,
+    "fire": false,
+    "lightning": false,
+    "water": true
   }
 }, {
   name: "Test",
