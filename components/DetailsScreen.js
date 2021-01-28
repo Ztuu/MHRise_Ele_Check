@@ -22,16 +22,16 @@ function IconDisplay({heading_text, icon_dict}){
       <View style={{paddingBottom: 10}}>
         <Text style={styles.subHeading}>{heading_text}</Text>
         {Object.keys(icon_dict).map((key)  => (
-          <>
+          <React.Fragment key={key}>
           {icon_dict[key] === true &&
-            <View key={key} style={{flexDirection: "row", alignItems: "center",}}>
+            <View style={{flexDirection: "row", alignItems: "center",}}>
               <Image
                 style={styles.elementIcon}
                 source={elementIcons[key]} />
               <Text>{key}</Text>
             </View>
           }
-          </>
+          </React.Fragment>
         ))}
       </View>
     )
