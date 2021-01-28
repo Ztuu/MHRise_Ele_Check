@@ -1,14 +1,27 @@
 monster_list = [{
   name: "Great Izuchi",
   color: "#d6a100",
-  data_missing: true
+  data_missing: true,
+  weakness: {
+    "lightning": false,
+    "dragon": false,
+    "fire": false,
+    "water": false
+  }
 }, {
   name: "Mizutsune",
   color: "#ffc4fd",
-  data_missing: false
+  data_missing: false,
+  weakness: {
+    "lightning": true,
+    "dragon": true,
+    "fire": false,
+    "water": false
+  }
 }, {
   name: "Test",
-  color: ""
+  color: "",
+  data_missing: false,
 }];
 
 for(let i=0; i<monster_list.length; i++){

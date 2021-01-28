@@ -31,6 +31,7 @@ export default function App() {
               title: 'Monster Hunter Rise',
               headerTitleStyle: {
                 alignSelf: 'center',
+                fontWeight: 'bold',
               }
             }}
           />
