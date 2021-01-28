@@ -25,9 +25,20 @@ monster_list = [{
     "water": true
   }
 }, {
-  name: "Test",
+  name: "Test no weak or resist",
   color: "",
   data_missing: false,
+},
+{
+  name: "Test no resist",
+  color: "",
+  data_missing: false,
+  weakness: {
+    "dragon": true,
+    "fire": false,
+    "lightning": true,
+    "water": false
+  }
 }];
 
 for(let i=0; i<monster_list.length; i++){

@@ -45,11 +45,13 @@ const styles = StyleSheet.create({
     flex: 6,
     backgroundColor: '#cfcfcf',
     alignItems: 'center',
+    paddingTop: 10,
   },
   monsterRow: {
     width: screenWidth,
     flexDirection: "row",
     justifyContent: 'space-around',
     alignItems: "center",
+    paddingVertical: 5,
   },
 });

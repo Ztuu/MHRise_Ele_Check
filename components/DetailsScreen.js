@@ -17,42 +17,44 @@ const elementIcons = {
 
 function IconDisplay({heading_text, icon_dict}){
   // Displays a list of elemental icons based on which values are true under a heading
-  return (
-    <View style={{paddingBottom: 10}}>
-      <Text style={styles.subHeading}>{heading_text}</Text>
-      {Object.keys(icon_dict).map((key)  => (
-        <>
-        {icon_dict[key] === true &&
-          <View key={key} style={{flexDirection: "row", alignItems: "center",}}>
-            <Image
-              style={styles.elementIcon}
-              source={elementIcons[key]} />
-            <Text>{key}</Text>
-          </View>
-        }
-        </>
-      ))}
-    </View>
-  )
+  if (icon_dict) {
+    return (
+      <View style={{paddingBottom: 10}}>
+        <Text style={styles.subHeading}>{heading_text}</Text>
+        {Object.keys(icon_dict).map((key)  => (
+          <>
+          {icon_dict[key] === true &&
+            <View key={key} style={{flexDirection: "row", alignItems: "center",}}>
+              <Image
+                style={styles.elementIcon}
+                source={elementIcons[key]} />
+              <Text>{key}</Text>
+            </View>
+          }
+          </>
+        ))}
+      </View>
+    )
+  }else{
+    return(
+      <View style={{paddingBottom: 10}}>
+        <Text style={styles.subHeading}>{heading_text}</Text>
+        <Text>No {heading_text} data</Text>
+      </View>
+    )
+  }
+
 }
 
 
 function DetailDisplay({monster_id}) {
   const monster = monster_dict[monster_id];
-
-  if(monster.weakness){
-    return (
-      <View>
-        <IconDisplay heading_text="Weaknesses" icon_dict={monster.weakness} />
-        <IconDisplay heading_text="Resists" icon_dict={monster.resist} />
-      </View>
-    )
-  }else{
-    // Error case if data is missing
-    return(
-      <Text>Weakness Missing</Text>
-    )
-  }
+  return (
+    <View>
+      <IconDisplay heading_text="Weaknesses" icon_dict={monster.weakness} />
+      <IconDisplay heading_text="Resists" icon_dict={monster.resist} />
+    </View>
+  )
 }
 
 export default function DetailsScreen({route}) {

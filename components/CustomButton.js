@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     elevation: 8,
     backgroundColor: "#ffc7c7",
     borderRadius: 10,
-    paddingVertical: 10,
+    paddingVertical: 3,
     paddingHorizontal: 12
   },
   appButtonText: {
