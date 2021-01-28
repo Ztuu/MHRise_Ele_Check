@@ -14,39 +14,37 @@ const elementIcons = {
   water: require("../assets/element_icons/water.png"),
 }
 
-function DetailDisplay(props) {
-  const monster_id = props.monster_id;
+
+function IconDisplay({heading_text, icon_dict}){
+  // Displays a list of elemental icons based on which values are true under a heading
+  return (
+    <View style={{paddingBottom: 10}}>
+      <Text style={styles.subHeading}>{heading_text}</Text>
+      {Object.keys(icon_dict).map((key)  => (
+        <>
+        {icon_dict[key] === true &&
+          <View key={key} style={{flexDirection: "row", alignItems: "center",}}>
+            <Image
+              style={styles.elementIcon}
+              source={elementIcons[key]} />
+            <Text>{key}</Text>
+          </View>
+        }
+        </>
+      ))}
+    </View>
+  )
+}
+
+
+function DetailDisplay({monster_id}) {
   const monster = monster_dict[monster_id];
 
   if(monster.weakness){
     return (
       <View>
-        <Text style={styles.subHeading}>Weaknesses</Text>
-        {Object.keys(monster.weakness).map((key)  => (
-          <>
-          {monster.weakness[key] === true &&
-            <View style={{flexDirection: "row", alignItems: "center",}}>
-              <Image
-                style={styles.elementIcon}
-                source={elementIcons[key]} />
-              <Text>{key}</Text>
-            </View>
-          }
-          </>
-        ))}
-        <Text style={styles.subHeading}>Resists</Text>
-        {Object.keys(monster.resist).map((key)  => (
-          <>
-          {monster.resist[key] === true &&
-            <View style={{flexDirection: "row", alignItems: "center",}}>
-              <Image
-                style={styles.elementIcon}
-                source={elementIcons[key]} />
-              <Text>{key}</Text>
-            </View>
-          }
-          </>
-        ))}
+        <IconDisplay heading_text="Weaknesses" icon_dict={monster.weakness} />
+        <IconDisplay heading_text="Resists" icon_dict={monster.resist} />
       </View>
     )
   }else{
