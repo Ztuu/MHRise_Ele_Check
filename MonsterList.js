@@ -23,6 +23,12 @@ monster_list = [{
     "fire": false,
     "lightning": false,
     "water": true
+  },
+  immune: {
+    "poison": false,
+    "paralysis": false,
+    "sleep": false,
+    "blast": false,
   }
 }, {
   name: "Test no weak or resist",
@@ -55,6 +61,12 @@ monster_list = [{
     "fire": true,
     "lightning": true,
     "water": true
+  },
+  immune: {
+    "poison": true,
+    "paralysis": true,
+    "sleep": true,
+    "blast": true,
   }
 }];
 

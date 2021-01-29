@@ -1,6 +1,6 @@
 // External imports
 import React, {useEffect} from 'react';
-import { StyleSheet, Text, View, Dimensions, Image } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Dimensions, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 
 // Internal imports
@@ -12,6 +12,10 @@ const elementIcons = {
   fire: require("../assets/element_icons/fire.png"),
   lightning: require("../assets/element_icons/lightning.png"),
   water: require("../assets/element_icons/water.png"),
+  poison: require("../assets/status_icons/poison.png"),
+  paralysis: require("../assets/status_icons/paralysis.png"),
+  sleep: require("../assets/status_icons/sleep.png"),
+  blast: require("../assets/status_icons/blast.png"),
 }
 
 
@@ -50,9 +54,10 @@ function IconDisplay({heading_text, icon_dict}){
 function DetailDisplay({monster_id}) {
   const monster = monster_dict[monster_id];
   return (
-    <View>
+    <View style={styles.detailDisplay}>
       <IconDisplay heading_text="Weaknesses" icon_dict={monster.weakness} />
       <IconDisplay heading_text="Resists" icon_dict={monster.resist} />
+      <IconDisplay heading_text="Immune" icon_dict={monster.immune} />
     </View>
   )
 }
@@ -75,10 +80,10 @@ export default function DetailsScreen({route}) {
   }
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <Text style={styles.mainHeading}>Name: {monster.name}</Text>
       {data_display}
-    </View>
+    </ScrollView>
   );
 }
 
@@ -96,6 +101,9 @@ const styles = StyleSheet.create({
   },
   subHeading: {
     fontWeight: "bold"
+  },
+  detailDisplay: {
+    paddingBottom: 20,
   },
   elementIcon: {
     width: 50, height: 50
