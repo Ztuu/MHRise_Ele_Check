@@ -1,6 +1,6 @@
 // External imports
 import React from 'react';
-import { StyleSheet, Text, View, Button, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Button, Dimensions, ScrollView} from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 
 // Internal imports
@@ -32,11 +32,12 @@ export default function ListScreen() {
   const monster_rows = monster_list;
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       {monster_rows.map(monster => (
         <MonsterRow key={monster.id} monster_id={monster.id} monster_name={monster.name} />
       ))}
-    </View>
+      <Text style={{paddingBottom: 15, alignSelf: "center", fontSize: 8}}>End of List</Text>
+    </ScrollView>
   );
 }
 
@@ -44,14 +45,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 6,
     backgroundColor: '#cfcfcf',
-    alignItems: 'center',
     paddingTop: 10,
   },
   monsterRow: {
     width: screenWidth,
     flexDirection: "row",
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     alignItems: "center",
     paddingVertical: 5,
+    paddingHorizontal: screenWidth/15,
   },
 });

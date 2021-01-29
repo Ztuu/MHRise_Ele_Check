@@ -70,6 +70,14 @@ monster_list = [{
   }
 }];
 
+for(let i=0; i<36; i++){
+  monster_list.push({
+    name: "Bulking out list",
+    color: "",
+    data_missing: true,
+  });
+}
+
 for(let i=0; i<monster_list.length; i++){
   monster_list[i].id = i;
 }
