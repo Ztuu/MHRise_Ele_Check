@@ -30,6 +30,20 @@ function MonsterRow(props){
 
 export default function ListScreen() {
   const monster_rows = monster_list;
+  const navigation = useNavigation()
+
+  // Add Button header
+  React.useLayoutEffect(() => {
+    navigation.setOptions({
+      headerRight: () => (
+        <CustomButton
+            onPress={() => navigation.navigate('AboutModal')}
+            title="?"
+            customClass={{backgroundColor: '#787878', marginRight: 10}}
+          />
+      ),
+    });
+  }, [navigation]);
 
   return (
     <ScrollView style={styles.container}>

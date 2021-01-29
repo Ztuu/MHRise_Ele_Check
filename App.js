@@ -1,22 +1,24 @@
 // External imports
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+
 
 // Internal imports
 import ListScreen from './components/ListScreen';
 import DetailsScreen from './components/DetailsScreen';
+import AboutModal from './components/AboutModal'
 
 
-const Stack = createStackNavigator();
+const MainStack = createStackNavigator();
+const RootStack = createStackNavigator();
 
 
-export default function App() {
+function MainStackScreen() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home"
+      <MainStack.Navigator initialRouteName="Home"
         screenOptions={{
           headerStyle: {
             backgroundColor: '#787878',
@@ -24,19 +26,29 @@ export default function App() {
           headerTintColor: '#000000',
           headerTitleStyle: {
             fontWeight: 'bold',
-          },
+          }
         }}>
-        <Stack.Screen name="List" component={ListScreen}
+        <MainStack.Screen name="List" component={ListScreen}
           options={{
               title: 'Monster Hunter Rise',
               headerTitleStyle: {
                 alignSelf: 'center',
                 fontWeight: 'bold',
-              }
+              },
             }}
           />
-        <Stack.Screen name="Details" component={DetailsScreen} />
-      </Stack.Navigator>
+        <MainStack.Screen name="Details" component={DetailsScreen} />
+      </MainStack.Navigator>
+  );
+}
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <RootStack.Navigator mode="modal" headerMode="none">
+        <RootStack.Screen name="Main" component={MainStackScreen} />
+        <RootStack.Screen name="AboutModal" component={AboutModal} />
+      </RootStack.Navigator>
     </NavigationContainer>
   );
 }
