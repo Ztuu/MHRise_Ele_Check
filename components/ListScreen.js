@@ -1,6 +1,6 @@
 // External imports
-import React from 'react';
-import { StyleSheet, Text, View, Button, Dimensions, ScrollView} from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, Button, Dimensions, ScrollView, TextInput} from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 
 // Internal imports
@@ -29,8 +29,21 @@ function MonsterRow(props){
 
 
 export default function ListScreen() {
-  const monster_rows = monster_list;
-  const navigation = useNavigation()
+  const navigation = useNavigation();
+  const [searchText, setSearchText] = useState('');
+  let [monster_rows, setMonsterRows] = useState(monster_list);
+
+  // Callback to update the monsters displayed
+  const updateSearch = (text) => {
+    setSearchText(text);
+    let new_list = [];
+    for(monster of monster_list){
+      if(monster.name && monster.name.toUpperCase().match(text.toUpperCase())){
+        new_list.push(monster);
+      }
+    }
+    setMonsterRows(new_list);
+  }
 
   // Add Button header
   React.useLayoutEffect(() => {
@@ -47,6 +60,18 @@ export default function ListScreen() {
 
   return (
     <ScrollView style={styles.container}>
+      <View style={styles.searchBox}>
+        <TextInput
+          style={styles.searchText}
+          placeholder="Search For Monster"
+          value={searchText}
+          onChangeText={text => {
+            updateSearch(text);
+          }}
+        />
+        <Button title="X" onPress={()=>updateSearch("")} />
+      </View>
+
       {monster_rows.map(monster => (
         <MonsterRow key={monster.id} monster_id={monster.id} monster_name={monster.name} />
       ))}
@@ -69,4 +94,7 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     paddingHorizontal: screenWidth/15,
   },
+  searchBox: {flexDirection: "row", paddingHorizontal: screenWidth/15},
+  searchText: {flex: 1, borderColor: "#000000", borderStyle: "solid", borderWidth: 1, paddingHorizontal: 5}
+
 });
