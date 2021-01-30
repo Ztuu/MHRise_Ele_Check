@@ -15,9 +15,11 @@ function MonsterRow(props){
 
   return (
     <View style={styles.monsterRow} >
-      <Text style={{fontWeight: 'bold', color: monster.color ? monster.color : "#000000"}}>
+      <View style={styles.letterIconContainer}>
+      <Text style={[styles.letterIcon, {color: monster.color ? monster.color : "#000000"}]}>
         {monster.name.charAt(0)}
       </Text>
+      </View>
       <Text>{monster.name}</Text>
       <CustomButton
         title=">"
@@ -96,6 +98,18 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingVertical: 5,
     paddingHorizontal: screenWidth/15,
+  },
+  letterIconContainer: {
+    borderColor: "#9e9e9e",
+    borderStyle: "solid",
+    borderWidth: 1,
+    paddingHorizontal: 7,
+    paddingVertical: 3,
+    borderRadius: 10,
+    alignItems: "center"
+  },
+  letterIcon: {
+    fontWeight: 'bold',
   },
   searchBox: {
     flexDirection: "row",
