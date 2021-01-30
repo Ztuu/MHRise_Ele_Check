@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Button, Dimensions, ScrollView, TextInput} from 'react-native';
 import { useNavigation } from '@react-navigation/native'
+import AppLoading from 'expo-app-loading';
+// import { useFonts } from 'expo-font';
+import { useFonts, Oswald_400Regular } from '@expo-google-fonts/oswald';
 
 // Internal imports
 import CustomButton from './CustomButton'
@@ -12,22 +15,32 @@ var screenWidth = Dimensions.get('window').width; //full width
 function MonsterRow(props){
   const navigation = useNavigation()
   const monster = monster_dict[props.monster_id];
+  let [googleFontsLoaded] = useFonts({
+    Oswald_400Regular,
+  });
+  let [fontsLoaded] = useFonts({
+    'Panther': require('../assets/fonts/Panther.ttf'),
+  });
 
-  return (
-    <View style={styles.monsterRow} >
-      <View style={styles.letterIconContainer}>
-      <Text style={[styles.letterIcon, {color: monster.color ? monster.color : "#000000"}]}>
-        {monster.name.charAt(0)}
-      </Text>
+  if (!(fontsLoaded && googleFontsLoaded)) {
+    return <AppLoading />;
+  } else {
+    return (
+      <View style={styles.monsterRow} >
+        <View style={styles.letterIconContainer}>
+        <Text style={[styles.letterIcon, {fontFamily: "Panther", color: monster.color ? monster.color : "#000000"}]}>
+          {monster.name.charAt(0)}
+        </Text>
+        </View>
+        <Text style={{fontFamily: "Oswald_400Regular"}}>{monster.name}</Text>
+        <CustomButton
+          title=">"
+          onPress={() => navigation.navigate('Details', {monster_id: monster.id})}
+          customClass={{elevation: 8}}
+        />
       </View>
-      <Text>{monster.name}</Text>
-      <CustomButton
-        title=">"
-        onPress={() => navigation.navigate('Details', {monster_id: monster.id})}
-        customClass={{elevation: 8}}
-      />
-    </View>
-  )
+    )
+  }
 }
 
 
@@ -35,6 +48,7 @@ export default function ListScreen() {
   const navigation = useNavigation();
   const [searchText, setSearchText] = useState('');
   let [monster_rows, setMonsterRows] = useState(monster_list);
+
 
   // Callback to update the monsters displayed
   const updateSearch = (text) => {
@@ -103,13 +117,13 @@ const styles = StyleSheet.create({
     borderColor: "#9e9e9e",
     borderStyle: "solid",
     borderWidth: 1,
-    paddingHorizontal: 7,
-    paddingVertical: 3,
+    paddingHorizontal: 10,
+    paddingVertical: 10,
     borderRadius: 10,
     alignItems: "center"
   },
   letterIcon: {
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
   },
   searchBox: {
     flexDirection: "row",
