@@ -16,7 +16,6 @@ export default CustomButton;
 
 const styles = StyleSheet.create({
   appButtonContainer: {
-    elevation: 8,
     backgroundColor: "#ffc7c7",
     borderRadius: 10,
     paddingVertical: 3,

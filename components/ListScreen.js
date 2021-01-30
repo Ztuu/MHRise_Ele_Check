@@ -22,6 +22,7 @@ function MonsterRow(props){
       <CustomButton
         title=">"
         onPress={() => navigation.navigate('Details', {monster_id: monster.id})}
+        customClass={{elevation: 8}}
       />
     </View>
   )
@@ -52,7 +53,7 @@ export default function ListScreen() {
         <CustomButton
             onPress={() => navigation.navigate('AboutModal')}
             title="?"
-            customClass={{backgroundColor: '#787878', marginRight: 10}}
+            customClass={styles.searchClearButton}
           />
       ),
     });
@@ -69,7 +70,9 @@ export default function ListScreen() {
             updateSearch(text);
           }}
         />
-        <Button title="X" onPress={()=>updateSearch("")} />
+        <CustomButton title="X" onPress={()=>updateSearch("")}
+          customClass={{borderRadius: 0, backgroundColor: "#eb4034", paddingHorizontal: 8}}
+        />
       </View>
 
       {monster_rows.map(monster => (
@@ -94,7 +97,20 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     paddingHorizontal: screenWidth/15,
   },
-  searchBox: {flexDirection: "row", paddingHorizontal: screenWidth/15},
-  searchText: {flex: 1, borderColor: "#000000", borderStyle: "solid", borderWidth: 1, paddingHorizontal: 5}
-
+  searchBox: {
+    flexDirection: "row",
+    paddingHorizontal: screenWidth/15
+  },
+  searchText: {
+    flex: 1,
+    borderColor: "#525252",
+    backgroundColor: "#e0e0e0",
+    borderStyle: "solid",
+    borderWidth: 1,
+    paddingHorizontal: 5
+  },
+  searchClearButton: {
+    backgroundColor: '#787878',
+    marginRight: 10
+  }
 });
