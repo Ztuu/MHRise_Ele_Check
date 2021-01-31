@@ -54,13 +54,15 @@ monster_list = [{
     "dragon": true,
     "fire": true,
     "lightning": true,
-    "water": true
+    "water": true,
+    ice: true
   },
   resist: {
     "dragon": true,
     "fire": true,
     "lightning": true,
-    "water": true
+    "water": true,
+    ice: true
   },
   immune: {
     "poison": true,

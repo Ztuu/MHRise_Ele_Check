@@ -12,6 +12,7 @@ const elementIcons = {
   fire: require("../assets/element_icons/fire.png"),
   lightning: require("../assets/element_icons/lightning.png"),
   water: require("../assets/element_icons/water.png"),
+  ice: require("../assets/element_icons/ice.png"),
   poison: require("../assets/status_icons/poison.png"),
   paralysis: require("../assets/status_icons/paralysis.png"),
   sleep: require("../assets/status_icons/sleep.png"),
