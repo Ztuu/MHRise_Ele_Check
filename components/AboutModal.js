@@ -10,7 +10,7 @@ import CustomButton from './CustomButton'
 export default function ModalScreen({ navigation }) {
   return (
     <View style={styles.modalBody}>
-      <Text style={{ fontSize: 30 }}>About This App</Text>
+      <Text style={{ fontSize: 30, fontWeight: "bold" }}>About This App</Text>
       <Text></Text>
       <CustomButton title="View Source Code" onPress={() => Linking.openURL('https://github.com/Ztuu/MHRise_React')} />
 
