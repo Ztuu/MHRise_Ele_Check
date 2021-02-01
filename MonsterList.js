@@ -1,84 +1,407 @@
-monster_list = [{
-  name: "Great Izuchi",
-  color: "#d6a100",
-  data_missing: true,
-  weakness: {
-    "lightning": false,
-    "dragon": false,
-    "fire": false,
-    "water": false
-  }
-}, {
-  name: "Mizutsune",
-  color: "#ffc4fd",
-  data_missing: false,
-  weakness: {
-    "dragon": true,
-    "fire": false,
-    "lightning": true,
-    "water": false
-  },
-  resist: {
-    "dragon": false,
-    "fire": false,
-    "lightning": false,
-    "water": true
-  },
-  immune: {
-    "poison": false,
-    "paralysis": false,
-    "sleep": false,
-    "blast": false,
-  }
-}, {
-  name: "Test no weak or resist",
-  color: "",
-  data_missing: false,
-},
+// This file has been generated automatically by a Python script
+monster_list = [
 {
-  name: "Test no resist",
-  color: "",
-  data_missing: false,
-  weakness: {
-    "dragon": true,
-    "fire": false,
-    "lightning": true,
-    "water": false
-  }
-},
-{
-  name: "Test All Icons",
-  color: "",
-  data_missing: false,
-  weakness: {
-    "dragon": true,
-    "fire": true,
-    "lightning": true,
-    "water": true,
-    ice: true
-  },
-  resist: {
-    "dragon": true,
-    "fire": true,
-    "lightning": true,
-    "water": true,
-    ice: true
-  },
-  immune: {
-    "poison": true,
-    "paralysis": true,
-    "sleep": true,
-    "blast": true,
-  }
-}];
+            name: "Anjanath",
+            color: "#9c4346",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: true,
+            },
+            resist: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Arzuros",
+            color: "#1226ff",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: true,
+                ice: true,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Barioth",
+            color: "#bdbdbd",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Great Izuchi",
+            color: "#d6a100",
+            data_missing: true,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Jyuratodus",
+            color: "#8a6300",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Jyuratodus (Mud Covered)",
+            color: "#8a6300",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            resist: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Khezu",
+            color: "#969696",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Lagombi",
+            color: "#00085e",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            resist: {
+                dragon: true,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Magnamalo",
+            color: "#6a19ff",
+            data_missing: true,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Mizutsune",
+            color: "#ffc4fd",
+            data_missing: false,
+            weakness: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Pukei-Pukei",
+            color: "#19ffba",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: true,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Rathalos",
+            color: "#ff0000",
+            data_missing: false,
+            weakness: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Rathian",
+            color: "#0abf00",
+            data_missing: false,
+            weakness: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Tigrex",
+            color: "#ff8400",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Tobi Kadachi",
+            color: "#70eeff",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Test all icons",
+            color: "#9c4346",
+            data_missing: false,
+            weakness: {
+                dragon: true,
+                fire: true,
+                ice: true,
+                lightning: true,
+                water: true,
+            },
+            resist: {
+                dragon: true,
+                fire: true,
+                ice: true,
+                lightning: true,
+                water: true,
+            },
+            immune: {
+                blast: true,
+                paralysis: true,
+                poison: true,
+                sleep: true
+            },
+        },
 
-for(let i=0; i<36; i++){
-  monster_list.push({
-    name: "Bulking out list",
-    color: "",
-    data_missing: true,
-  });
-}
+]
 
 for(let i=0; i<monster_list.length; i++){
   monster_list[i].id = i;
