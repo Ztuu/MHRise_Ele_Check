@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, Button, Dimensions, ScrollView, TextInput} from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 import AppLoading from 'expo-app-loading';
-// import { useFonts } from 'expo-font';
 import { useFonts, Oswald_400Regular } from '@expo-google-fonts/oswald';
 
 // Internal imports

@@ -5,6 +5,7 @@ import { useNavigation } from '@react-navigation/native'
 
 // Internal imports
 import {monster_dict} from '../MonsterList'
+import CustomText from './CustomText'
 
 var screenWidth = Dimensions.get('window').width; //full width
 const elementIcons = {
@@ -33,8 +34,8 @@ function IconDisplay({heading_text, icon_dict}){
     if (all_false === true){
       return(
         <View style={{paddingBottom: 10}}>
-          <Text style={styles.subHeading}>{heading_text}</Text>
-          <Text>None</Text>
+          <CustomText text={heading_text} bold="true" />
+          <CustomText text="None" />
         </View>
       )
     }
@@ -42,7 +43,7 @@ function IconDisplay({heading_text, icon_dict}){
     // If at least one value is true return list of icons
     return (
       <View style={{paddingBottom: 10}}>
-        <Text style={styles.subHeading}>{heading_text}</Text>
+        <CustomText text={heading_text} bold="true" />
         {Object.keys(icon_dict).map((key)  => (
           <React.Fragment key={key}>
           {icon_dict[key] === true &&
@@ -50,7 +51,7 @@ function IconDisplay({heading_text, icon_dict}){
               <Image
                 style={styles.elementIcon}
                 source={elementIcons[key]} />
-              <Text>{key}</Text>
+              <CustomText text={key} style={{textTransform: 'capitalize'}} />
             </View>
           }
           </React.Fragment>
@@ -60,8 +61,8 @@ function IconDisplay({heading_text, icon_dict}){
   }else{
     return(
       <View style={{paddingBottom: 10}}>
-        <Text style={styles.subHeading}>{heading_text}</Text>
-        <Text>No {heading_text} data</Text>
+        <CustomText text={heading_text} bold="true" />
+        <CustomText text={"No " + heading_text + " data"} />
       </View>
     )
   }
@@ -99,7 +100,7 @@ export default function DetailsScreen({route}) {
 
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.mainHeading}>Name: {monster.name}</Text>
+      <CustomText text={"Name: " + monster.name} bold="true" style={styles.mainHeading} />
       {data_display}
     </ScrollView>
   );
@@ -113,17 +114,13 @@ const styles = StyleSheet.create({
     paddingTop: 15,
   },
   mainHeading: {
-    fontWeight: "bold",
-    fontSize: 25,
+    fontSize: 35,
     paddingBottom: 10,
-  },
-  subHeading: {
-    fontWeight: "bold"
   },
   detailDisplay: {
     paddingBottom: 20,
   },
   elementIcon: {
-    width: 50, height: 50
+    width: 30, height: 30
   }
 });
