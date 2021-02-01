@@ -400,6 +400,31 @@ monster_list = [
                 sleep: true
             },
         },
+        {
+            name: "Test no icons",
+            color: "#9c4346",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
 
 ]
 

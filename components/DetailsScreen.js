@@ -23,6 +23,23 @@ const elementIcons = {
 function IconDisplay({heading_text, icon_dict}){
   // Displays a list of elemental icons based on which values are true under a heading
   if (icon_dict) {
+    // Check if all values are false
+    let all_false = true;
+    for(var key in icon_dict){
+      if (icon_dict[key] === true){
+        all_false = false;
+      }
+    }
+    if (all_false === true){
+      return(
+        <View style={{paddingBottom: 10}}>
+          <Text style={styles.subHeading}>{heading_text}</Text>
+          <Text>None</Text>
+        </View>
+      )
+    }
+
+    // If at least one value is true return list of icons
     return (
       <View style={{paddingBottom: 10}}>
         <Text style={styles.subHeading}>{heading_text}</Text>
