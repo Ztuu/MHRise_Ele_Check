@@ -19,7 +19,7 @@ function MonsterRow(props){
     Oswald_400Regular,
   });
   let [fontsLoaded] = useFonts({
-    'Panther': require('../assets/fonts/Panther.ttf'),
+    'SuperMario256': require('../assets/fonts/SuperMario256.ttf'),
   });
 
   if (!(fontsLoaded && googleFontsLoaded)) {
@@ -28,7 +28,7 @@ function MonsterRow(props){
     return (
       <View style={styles.monsterRow} >
         <View style={styles.letterIconContainer}>
-        <Text style={[styles.letterIcon, {fontFamily: "Panther", color: monster.color ? monster.color : "#000000"}]}>
+        <Text style={[styles.letterIcon, {fontFamily: "SuperMario256", color: monster.color ? monster.color : "#000000"}]}>
           {monster.name.charAt(0)}
         </Text>
         </View>
@@ -36,7 +36,7 @@ function MonsterRow(props){
         <CustomButton
           title=">"
           onPress={() => navigation.navigate('Details', {monster_id: monster.id})}
-          customClass={{elevation: 8}}
+          customClass={{elevation: 8, width: 35, height: 35, justifyContent: "center"}}
         />
       </View>
     )
@@ -117,13 +117,17 @@ const styles = StyleSheet.create({
     borderColor: "#9e9e9e",
     borderStyle: "solid",
     borderWidth: 1,
-    paddingHorizontal: 10,
-    paddingVertical: 10,
+    width: 40,
+    height: 40,
+    // paddingHorizontal: 8,
+    // paddingVertical: 2,
     borderRadius: 10,
-    alignItems: "center"
+    alignItems: "center",
+    justifyContent: "center"
   },
   letterIcon: {
     // fontWeight: 'bold',
+    fontSize: 20,
   },
   searchBox: {
     flexDirection: "row",
