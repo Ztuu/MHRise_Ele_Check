@@ -1,6 +1,6 @@
 // External imports
 import React, {useEffect} from 'react';
-import { StyleSheet, Text, View, ScrollView, Dimensions, Image } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Dimensions, Image, ImageBackground } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 
 // Internal imports
@@ -8,6 +8,8 @@ import {monster_dict} from '../MonsterList'
 import CustomText from './CustomText'
 
 var screenWidth = Dimensions.get('window').width; //full width
+const bgImage = require('../assets/bg_texture.jpg');
+
 const elementIcons = {
   dragon: require("../assets/element_icons/dragon.png"),
   fire: require("../assets/element_icons/fire.png"),
@@ -99,9 +101,13 @@ export default function DetailsScreen({route}) {
   }
 
   return (
-    <ScrollView style={styles.container}>
-      <CustomText text={"Name: " + monster.name} bold="true" style={styles.mainHeading} />
-      {data_display}
+    <ScrollView style={styles.container} contentContainerStyle={{flexGrow: 1}}>
+      <ImageBackground source={bgImage} style={styles.imageBg} imageStyle={styles.imageBgInner}>
+        <View style={styles.scrollBody}>
+          <CustomText text={"Name: " + monster.name} bold="true" style={styles.mainHeading} />
+          {data_display}
+        </View>
+      </ImageBackground>
     </ScrollView>
   );
 }
@@ -110,8 +116,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#3f478f',
+  },
+  scrollBody: {
     paddingHorizontal: screenWidth/15,
     paddingTop: 15,
+    flex: 1
+  },
+  imageBg: {
+    flex: 1,
+  },
+  imageBgInner: {
+    opacity: 0.1, resizeMode: "cover",
   },
   mainHeading: {
     fontSize: 35,

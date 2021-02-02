@@ -1,6 +1,6 @@
 // External imports
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Button, Dimensions, ScrollView, TextInput} from 'react-native';
+import { StyleSheet, Text, View, Button, Dimensions, ScrollView, TextInput, ImageBackground} from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 import AppLoading from 'expo-app-loading';
 import { useFonts, Oswald_400Regular } from '@expo-google-fonts/oswald';
@@ -10,6 +10,7 @@ import CustomButton from './CustomButton'
 import {monster_list, monster_dict} from '../MonsterList'
 
 var screenWidth = Dimensions.get('window').width; //full width
+const bgImage = require('../assets/bg_texture.jpg');
 
 function MonsterRow(props){
   const navigation = useNavigation()
@@ -75,34 +76,41 @@ export default function ListScreen() {
   }, [navigation]);
 
   return (
-    <ScrollView style={styles.container}>
-      <View style={styles.searchBox}>
-        <TextInput
-          style={styles.searchText}
-          placeholder="Search For Monster"
-          value={searchText}
-          onChangeText={text => {
-            updateSearch(text);
-          }}
-        />
-        <CustomButton title="X" onPress={()=>updateSearch("")}
-          customClass={styles.searchClearButton}
-        />
-      </View>
+    <ScrollView style={styles.container} contentContainerStyle={{flexGrow: 1}}>
+      <ImageBackground source={bgImage} style={styles.imageBg} imageStyle={styles.imageBgInner}>
+        <View style={styles.searchBox}>
+          <TextInput
+            style={styles.searchText}
+            placeholder="Search For Monster"
+            value={searchText}
+            onChangeText={text => {
+              updateSearch(text);
+            }}
+          />
+          <CustomButton title="X" onPress={()=>updateSearch("")}
+            customClass={styles.searchClearButton}
+          />
+        </View>
 
-      {monster_rows.map(monster => (
-        <MonsterRow key={monster.id} monster_id={monster.id} monster_name={monster.name} />
-      ))}
-      <Text style={{paddingBottom: 15, alignSelf: "center", fontSize: 8}}>End of List</Text>
+        {monster_rows.map(monster => (
+          <MonsterRow key={monster.id} monster_id={monster.id} monster_name={monster.name} />
+        ))}
+        <Text style={{paddingBottom: 15, alignSelf: "center", fontSize: 8}}>End of List</Text>
+      </ImageBackground>
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 6,
+    flex: 1,
     backgroundColor: '#3f478f',
-    paddingTop: 10,
+  },
+  imageBg: {
+    flex: 1,
+  },
+  imageBgInner: {
+    opacity: 0.1, resizeMode: "cover",
   },
   monsterRow: {
     width: screenWidth,
@@ -127,7 +135,8 @@ const styles = StyleSheet.create({
   },
   searchBox: {
     flexDirection: "row",
-    paddingHorizontal: screenWidth/15
+    paddingHorizontal: screenWidth/15,
+    marginTop: 10,
   },
   searchText: {
     flex: 1,
