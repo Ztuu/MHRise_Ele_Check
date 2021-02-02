@@ -109,7 +109,7 @@ export default function DetailsScreen({route}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#cfcfcf',
+    backgroundColor: '#3f478f',
     paddingHorizontal: screenWidth/15,
     paddingTop: 15,
   },

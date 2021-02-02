@@ -29,18 +29,17 @@ function MainStackScreen() {
       <MainStack.Navigator initialRouteName="Home"
         screenOptions={{
           headerStyle: {
-            backgroundColor: '#787878',
+            backgroundColor: '#000959',
           },
-          headerTintColor: '#000000',
+          headerTintColor: '#d4a62a',
           headerTitleStyle: {
-            fontFamily: 'Oswald_700Bold',
+            fontFamily: 'Oswald_700Bold'
           }
         }}>
         <MainStack.Screen name="List" component={ListScreen}
           options={{
               title: 'Monster Hunter Rise',
               headerTitleStyle: {
-                // alignSelf: 'center',
                 fontFamily: 'Oswald_700Bold',
               },
             }}

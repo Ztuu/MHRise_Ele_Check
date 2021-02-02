@@ -31,7 +31,7 @@ function MonsterRow(props){
           {monster.name.charAt(0)}
         </Text>
         </View>
-        <Text style={{fontFamily: "Oswald_400Regular"}}>{monster.name}</Text>
+        <Text style={{fontFamily: "Oswald_400Regular", fontSize: 18}}>{monster.name}</Text>
         <CustomButton
           title=">"
           onPress={() => navigation.navigate('Details', {monster_id: monster.id})}
@@ -101,7 +101,7 @@ export default function ListScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 6,
-    backgroundColor: '#cfcfcf',
+    backgroundColor: '#3f478f',
     paddingTop: 10,
   },
   monsterRow: {
@@ -113,19 +113,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: screenWidth/15,
   },
   letterIconContainer: {
-    borderColor: "#9e9e9e",
+    borderColor: "#000959",
     borderStyle: "solid",
     borderWidth: 1,
     width: 40,
     height: 40,
-    // paddingHorizontal: 8,
-    // paddingVertical: 2,
     borderRadius: 10,
     alignItems: "center",
     justifyContent: "center"
   },
   letterIcon: {
-    // fontWeight: 'bold',
     fontSize: 20,
   },
   searchBox: {
@@ -134,8 +131,8 @@ const styles = StyleSheet.create({
   },
   searchText: {
     flex: 1,
-    borderColor: "#525252",
-    backgroundColor: "#e0e0e0",
+    borderColor: "#000959",
+    backgroundColor: "#6b75bf",
     borderStyle: "solid",
     borderWidth: 1,
     paddingHorizontal: 5
@@ -147,7 +144,7 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderWidth: 1,
     borderLeftWidth: 0,
-    borderColor: "#525252",
+    borderColor: "#000959",
   },
   goDetailsButton: {
     elevation: 8,
@@ -156,7 +153,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   infoButton: {
-    backgroundColor: '#787878',
+    backgroundColor: 'rgba(0,0,0,0)',
     marginRight: 10
   }
 });
