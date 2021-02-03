@@ -1,5 +1,4 @@
 // External imports
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
