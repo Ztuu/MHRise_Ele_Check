@@ -101,6 +101,31 @@ monster_list = [
             },
         },
         {
+            name: "Goss Harag",
+            color: "#e0e0e0",
+            data_missing: true,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Jyuratodus",
             color: "#8a6300",
             data_missing: false,
@@ -326,6 +351,31 @@ monster_list = [
             },
         },
         {
+            name: "Tetranadon",
+            color: "#8bfca9",
+            data_missing: true,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Tigrex",
             color: "#ff8400",
             data_missing: false,
@@ -375,57 +425,7 @@ monster_list = [
                 sleep: false
             },
         },
-        {
-            name: "Test all icons",
-            color: "#9c4346",
-            data_missing: false,
-            weakness: {
-                dragon: true,
-                fire: true,
-                ice: true,
-                lightning: true,
-                water: true,
-            },
-            resist: {
-                dragon: true,
-                fire: true,
-                ice: true,
-                lightning: true,
-                water: true,
-            },
-            immune: {
-                blast: true,
-                paralysis: true,
-                poison: true,
-                sleep: true
-            },
-        },
-        {
-            name: "Test no icons",
-            color: "#9c4346",
-            data_missing: false,
-            weakness: {
-                dragon: false,
-                fire: false,
-                ice: false,
-                lightning: false,
-                water: false,
-            },
-            resist: {
-                dragon: false,
-                fire: false,
-                ice: false,
-                lightning: false,
-                water: false,
-            },
-            immune: {
-                blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
-            },
-        },
-
+        
 ]
 
 for(let i=0; i<monster_list.length; i++){
