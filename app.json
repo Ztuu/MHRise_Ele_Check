@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "mhrise_react",
-    "slug": "mhrise_react",
+    "name": "Elemental Weakness Checker for Monster Hunter Rise",
+    "slug": "ele-check-mhrise",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "cover",
+      "backgroundColor": "#3f478f"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -20,6 +20,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "io.itch.ztuu.ele_check_mhrise",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
