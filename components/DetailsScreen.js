@@ -36,8 +36,8 @@ function IconDisplay({heading_text, icon_dict}){
     if (all_false === true){
       return(
         <View style={{paddingBottom: 10}}>
-          <CustomText text={heading_text} bold="true" />
-          <CustomText text="None" />
+          <CustomText text={heading_text} bold="true" style={styles.fontSizing}/>
+          <CustomText text="None" style={styles.fontSizing}/>
         </View>
       )
     }
@@ -45,7 +45,7 @@ function IconDisplay({heading_text, icon_dict}){
     // If at least one value is true return list of icons
     return (
       <View style={{paddingBottom: 10}}>
-        <CustomText text={heading_text} bold="true" />
+        <CustomText text={heading_text} bold="true" style={styles.fontSizing} />
         {Object.keys(icon_dict).map((key)  => (
           <React.Fragment key={key}>
           {icon_dict[key] === true &&
@@ -53,7 +53,7 @@ function IconDisplay({heading_text, icon_dict}){
               <Image
                 style={styles.elementIcon}
                 source={elementIcons[key]} />
-              <CustomText text={key} style={{textTransform: 'capitalize'}} />
+              <CustomText text={key} style={[styles.fontSizing, {textTransform: 'capitalize'}]} />
             </View>
           }
           </React.Fragment>
@@ -76,8 +76,11 @@ function DetailDisplay({monster_id}) {
   const monster = monster_dict[monster_id];
   return (
     <View style={styles.detailDisplay}>
+      <CustomText text="Elemental Damage" bold="true" style={styles.sectionHeading} />
       <IconDisplay heading_text="Weaknesses" icon_dict={monster.weakness} />
       <IconDisplay heading_text="Resists" icon_dict={monster.resist} />
+
+      <CustomText text="Status Ailments" bold="true" style={styles.sectionHeading} />
       <IconDisplay heading_text="Immune" icon_dict={monster.immune} />
     </View>
   )
@@ -95,7 +98,12 @@ export default function DetailsScreen({route}) {
 
   let data_display;
   if(monster.data_missing===true || monster.data_missing === undefined) {
-    data_display = <Text>Data is Missing!</Text>;
+    data_display = <View>
+      <Text style={styles.fontSizing}>Data is Missing!</Text>
+      <Text style={styles.fontSizing}>This is a pre-release version of this app
+      and some data is not yet available. Please look for an update shortly after
+       Monster Hunter Rise launches!</Text>
+    </View>;
   }else{
     data_display = <DetailDisplay monster_id={monster_id} />;
   }
@@ -129,13 +137,19 @@ const styles = StyleSheet.create({
     opacity: 0.1, resizeMode: "cover",
   },
   mainHeading: {
-    fontSize: 35,
-    paddingBottom: 10,
+    fontSize: screenWidth>500 ? 45: 35,
+    paddingBottom: 5,
+  },
+  sectionHeading: {
+    fontSize: screenWidth>500 ? 35: 25,
   },
   detailDisplay: {
     paddingBottom: 20,
   },
   elementIcon: {
     width: 30, height: 30
+  },
+  fontSizing: {
+    fontSize: screenWidth>500 ? 27: 17
   }
 });
