@@ -7,6 +7,7 @@ import { useFonts, Oswald_400Regular } from '@expo-google-fonts/oswald';
 
 // Internal imports
 import CustomButton from './CustomButton'
+import CustomText from './CustomText'
 import {monster_list, monster_dict} from '../MonsterList'
 
 var screenWidth = Dimensions.get('window').width; //full width
@@ -74,7 +75,6 @@ export default function ListScreen() {
       ),
     });
   }, [navigation]);
-
   return (
     <ScrollView style={styles.container} contentContainerStyle={{flexGrow: 1}}>
       <ImageBackground source={bgImage} style={styles.imageBg} imageStyle={styles.imageBgInner}>
@@ -95,7 +95,10 @@ export default function ListScreen() {
         {monster_rows.map(monster => (
           <MonsterRow key={monster.id} monster_id={monster.id} monster_name={monster.name} />
         ))}
-        <Text style={{paddingBottom: 15, alignSelf: "center", fontSize: 8}}>End of List</Text>
+        <Text style={{paddingBottom: 10, alignSelf: "center", fontSize: 8}}>End of List</Text>
+        <CustomText text="This is a pre-release version of this app
+        and some data is not yet available. Please look for an update shortly after
+         Monster Hunter Rise launches!" style={{alignSelf: "center", paddingBottom: 15, paddingHorizontal: screenWidth/15}}/>
       </ImageBackground>
     </ScrollView>
   );
