@@ -351,6 +351,31 @@ monster_list = [
             },
         },
         {
+            name: "Somnacanth",
+            color: "#924ea3",
+            data_missing: true,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Tetranadon",
             color: "#8bfca9",
             data_missing: true,
