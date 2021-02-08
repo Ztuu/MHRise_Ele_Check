@@ -1,3 +1,4 @@
+![](/assets/feature_graphic.png)
 # Elemental Weakness Checker for Monster Hunter Rise
 A React Native app to view elemental weaknesses for monsters in Monster Hunter Rise.
 
