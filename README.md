@@ -2,6 +2,8 @@
 # Elemental Weakness Checker for Monster Hunter Rise
 A React Native app to view elemental weaknesses for monsters in Monster Hunter Rise.
 
+Currently in the review process of being published on Google Play.
+
 I keep the monster data in this [spreadsheet](https://docs.google.com/spreadsheets/d/1-wHituf-MDc_-AatjYbkgFz9OpqKu3X7N9rF69Aw8do/edit?usp=sharing) which is then exported to csv to create the data file.
 
 ## Screenshots
