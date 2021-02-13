@@ -76,6 +76,31 @@ monster_list = [
             },
         },
         {
+            name: "Bishaten ",
+            color: "#77ad4e",
+            data_missing: true,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Great Izuchi",
             color: "#d6a100",
             data_missing: true,
@@ -89,6 +114,31 @@ monster_list = [
             resist: {
                 dragon: false,
                 fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Great Wroggi",
+            color: "#f5aa42",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: true,
+            },
+            resist: {
+                dragon: true,
+                fire: true,
                 ice: false,
                 lightning: false,
                 water: false,
@@ -450,7 +500,7 @@ monster_list = [
                 sleep: false
             },
         },
-        
+
 ]
 
 for(let i=0; i<monster_list.length; i++){
