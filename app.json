@@ -23,7 +23,7 @@
       "package": "io.itch.ztuu.ele_check_mhrise",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#000959"
       },
       "permissions" : []
     },
