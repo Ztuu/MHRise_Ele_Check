@@ -28,7 +28,18 @@ with open("monster_data.csv", 'r') as datafile:
                 "paralysis": False,
                 "poison": False,
                 "sleep": False,
-
+            },
+            "most_resist": {
+                "blast": False,
+                "paralysis": False,
+                "poison": False,
+                "sleep": False,
+            },
+            "least_resist": {
+                "blast": False,
+                "paralysis": False,
+                "poison": False,
+                "sleep": False,
             }
         }
         for i in range(len(line)):
@@ -70,10 +81,30 @@ with open("monster_data.csv", 'r') as datafile:
                 if "s" in line[i]:
                     monster["immune"]["sleep"] = True
             elif i==4:
+                # Most Resist
+                if "b" in line[i]:
+                    monster["most_resist"]["blast"] = True
+                if "p" in line[i]:
+                    monster["most_resist"]["poison"] = True
+                if "x" in line[i]:
+                    monster["most_resist"]["paralysis"] = True
+                if "s" in line[i]:
+                    monster["most_resist"]["sleep"] = True
+            elif i==5:
+                # Least Resist
+                if "b" in line[i]:
+                    monster["least_resist"]["blast"] = True
+                if "p" in line[i]:
+                    monster["least_resist"]["poison"] = True
+                if "x" in line[i]:
+                    monster["least_resist"]["paralysis"] = True
+                if "s" in line[i]:
+                    monster["least_resist"]["sleep"] = True
+            elif i==6:
                 # Data Missing
                 if len(line[i]) == 0:
                     monster["data_missing"] = False
-            elif i==5:
+            elif i==7:
                 # Color
                 monster["color"] = line[i]
         result += f'''{{
@@ -99,6 +130,18 @@ with open("monster_data.csv", 'r') as datafile:
                 paralysis: {'true' if monster.get("immune", {}).get("paralysis") else 'false'},
                 poison: {'true' if monster.get("immune", {}).get("poison") else 'false'},
                 sleep: {'true' if monster.get("immune", {}).get("sleep") else 'false'}
+            }},
+            most_resist: {{
+                blast: {'true' if monster.get("most_resist", {}).get("blast") else 'false'},
+                paralysis: {'true' if monster.get("most_resist", {}).get("paralysis") else 'false'},
+                poison: {'true' if monster.get("most_resist", {}).get("poison") else 'false'},
+                sleep: {'true' if monster.get("most_resist", {}).get("sleep") else 'false'}
+            }},
+            least_resist: {{
+                blast: {'true' if monster.get("least_resist", {}).get("blast") else 'false'},
+                paralysis: {'true' if monster.get("least_resist", {}).get("paralysis") else 'false'},
+                poison: {'true' if monster.get("least_resist", {}).get("poison") else 'false'},
+                sleep: {'true' if monster.get("least_resist", {}).get("sleep") else 'false'}
             }},
         }},
         '''

@@ -24,6 +24,18 @@ monster_list = [
                 poison: false,
                 sleep: false
             },
+            most_resist: {
+                blast: true,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
         },
         {
             name: "Arzuros",
@@ -44,6 +56,18 @@ monster_list = [
                 water: false,
             },
             immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
                 blast: false,
                 paralysis: false,
                 poison: false,
@@ -74,6 +98,18 @@ monster_list = [
                 poison: false,
                 sleep: false
             },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
         },
         {
             name: "Bishaten ",
@@ -94,6 +130,18 @@ monster_list = [
                 water: false,
             },
             immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
                 blast: false,
                 paralysis: false,
                 poison: false,
@@ -124,6 +172,18 @@ monster_list = [
                 poison: false,
                 sleep: false
             },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
         },
         {
             name: "Great Wroggi",
@@ -144,6 +204,18 @@ monster_list = [
                 water: false,
             },
             immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: true,
+                sleep: false
+            },
+            least_resist: {
                 blast: false,
                 paralysis: false,
                 poison: false,
@@ -174,6 +246,18 @@ monster_list = [
                 poison: false,
                 sleep: false
             },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
         },
         {
             name: "Jyuratodus",
@@ -197,6 +281,18 @@ monster_list = [
                 blast: false,
                 paralysis: false,
                 poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: true,
+                paralysis: false,
+                poison: false,
+                sleep: true
+            },
+            least_resist: {
+                blast: false,
+                paralysis: true,
+                poison: true,
                 sleep: false
             },
         },
@@ -224,6 +320,18 @@ monster_list = [
                 poison: false,
                 sleep: false
             },
+            most_resist: {
+                blast: true,
+                paralysis: false,
+                poison: false,
+                sleep: true
+            },
+            least_resist: {
+                blast: false,
+                paralysis: true,
+                poison: true,
+                sleep: false
+            },
         },
         {
             name: "Khezu",
@@ -244,6 +352,18 @@ monster_list = [
                 water: false,
             },
             immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
                 blast: false,
                 paralysis: false,
                 poison: false,
@@ -274,6 +394,18 @@ monster_list = [
                 poison: false,
                 sleep: false
             },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
         },
         {
             name: "Magnamalo",
@@ -294,6 +426,18 @@ monster_list = [
                 water: false,
             },
             immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
                 blast: false,
                 paralysis: false,
                 poison: false,
@@ -324,6 +468,18 @@ monster_list = [
                 poison: false,
                 sleep: false
             },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
         },
         {
             name: "Pukei-Pukei",
@@ -348,6 +504,18 @@ monster_list = [
                 paralysis: false,
                 poison: false,
                 sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: true,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: true,
+                poison: false,
+                sleep: true
             },
         },
         {
@@ -374,6 +542,18 @@ monster_list = [
                 poison: false,
                 sleep: false
             },
+            most_resist: {
+                blast: true,
+                paralysis: false,
+                poison: true,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: true,
+                poison: false,
+                sleep: true
+            },
         },
         {
             name: "Rathian",
@@ -399,6 +579,18 @@ monster_list = [
                 poison: false,
                 sleep: false
             },
+            most_resist: {
+                blast: true,
+                paralysis: false,
+                poison: true,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: true,
+                poison: false,
+                sleep: true
+            },
         },
         {
             name: "Somnacanth",
@@ -419,6 +611,18 @@ monster_list = [
                 water: false,
             },
             immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
                 blast: false,
                 paralysis: false,
                 poison: false,
@@ -449,6 +653,18 @@ monster_list = [
                 poison: false,
                 sleep: false
             },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
         },
         {
             name: "Tigrex",
@@ -474,6 +690,18 @@ monster_list = [
                 poison: false,
                 sleep: false
             },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
         },
         {
             name: "Tobi Kadachi",
@@ -494,6 +722,92 @@ monster_list = [
                 water: false,
             },
             immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: true,
+                sleep: false
+            },
+        },
+        {
+            name: "Test all icons",
+            color: "#9c4346",
+            data_missing: false,
+            weakness: {
+                dragon: true,
+                fire: true,
+                ice: true,
+                lightning: true,
+                water: true,
+            },
+            resist: {
+                dragon: true,
+                fire: true,
+                ice: true,
+                lightning: true,
+                water: true,
+            },
+            immune: {
+                blast: true,
+                paralysis: true,
+                poison: true,
+                sleep: true
+            },
+            most_resist: {
+                blast: true,
+                paralysis: true,
+                poison: true,
+                sleep: true
+            },
+            least_resist: {
+                blast: true,
+                paralysis: true,
+                poison: true,
+                sleep: true
+            },
+        },
+        {
+            name: "Test no icons",
+            color: "#9c4346",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
                 blast: false,
                 paralysis: false,
                 poison: false,
