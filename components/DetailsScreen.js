@@ -81,6 +81,8 @@ function DetailDisplay({monster_id}) {
       <IconDisplay heading_text="Resists" icon_dict={monster.resist} />
 
       <CustomText text="Status Ailments" bold="true" style={styles.sectionHeading} />
+      <IconDisplay heading_text="Most Resisted" icon_dict={monster.most_resist} />
+      <IconDisplay heading_text="Least Resisted" icon_dict={monster.least_resist} />
       <IconDisplay heading_text="Immune" icon_dict={monster.immune} />
     </View>
   )
