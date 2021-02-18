@@ -1,6 +1,31 @@
 // This file has been generated automatically by a Python script
 monster_list = [
 {
+            name: "Almudron",
+            color: "#343d33",
+            data_missing: true,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Anjanath",
             color: "#9c4346",
             data_missing: false,
@@ -76,6 +101,31 @@ monster_list = [
             },
         },
         {
+            name: "Basarios",
+            color: "#545454",
+            data_missing: false,
+            weakness: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Bishaten ",
             color: "#77ad4e",
             data_missing: true,
@@ -89,6 +139,31 @@ monster_list = [
             resist: {
                 dragon: false,
                 fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Diablos",
+            color: "#cfb846",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: true,
                 ice: false,
                 lightning: false,
                 water: false,
@@ -351,6 +426,56 @@ monster_list = [
             },
         },
         {
+            name: "Rajang",
+            color: "#42320d",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: true,
+                fire: true,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Rakna-Kadaki",
+            color: "#1c1c1c",
+            data_missing: true,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Rathalos",
             color: "#ff0000",
             data_missing: false,
@@ -491,6 +616,31 @@ monster_list = [
                 fire: false,
                 ice: false,
                 lightning: true,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Volvidon",
+            color: "#d63333",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            resist: {
+                dragon: true,
+                fire: true,
+                ice: false,
+                lightning: false,
                 water: false,
             },
             immune: {
