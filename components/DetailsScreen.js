@@ -99,10 +99,10 @@ export default function DetailsScreen({route}) {
   let data_display;
   if(monster.data_missing===true || monster.data_missing === undefined) {
     data_display = <View>
-      <Text style={styles.fontSizing}>Data is Missing!</Text>
-      <Text style={styles.fontSizing}>This is a pre-release version of this app
-      and some data is not yet available. Please look for an update shortly after
-       Monster Hunter Rise launches!</Text>
+      <CustomText style={styles.fontSizing} text="Data is Missing!" />
+      <CustomText style={styles.fontSizing}
+        text="This is a pre-release version of this app and some data is not yet available. Please look for an update shortly after Monster Hunter Rise launches!"
+      />
     </View>;
   }else{
     data_display = <DetailDisplay monster_id={monster_id} />;
