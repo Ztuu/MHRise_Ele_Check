@@ -33,7 +33,7 @@ function MonsterRow(props){
           {monster.name.charAt(0)}
         </Text>
         </View>
-        <Text style={{fontFamily: "Oswald_400Regular", fontSize: 18}}>{monster.name}</Text>
+        <CustomText style={{fontSize: 18}} text={monster.name} />
         <CustomButton
           title=">"
           onPress={() => navigation.navigate('Details', {monster_id: monster.id})}
@@ -95,7 +95,7 @@ export default function ListScreen() {
         {monster_rows.map(monster => (
           <MonsterRow key={monster.id} monster_id={monster.id} monster_name={monster.name} />
         ))}
-        <Text style={{paddingBottom: 10, alignSelf: "center", fontSize: 8}}>End of List</Text>
+        <CustomText style={{paddingBottom: 10, alignSelf: "center", fontSize: 10}} text="End of List" />
         <CustomText text="This is a pre-release version of this app
         and some data is not yet available. Please look for an update shortly after
          Monster Hunter Rise launches!" style={{alignSelf: "center", paddingBottom: 15, paddingHorizontal: screenWidth/15}}/>
