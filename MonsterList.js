@@ -1,6 +1,31 @@
 // This file has been generated automatically by a Python script
 monster_list = [
 {
+            name: "Aknosom",
+            color: "#ebaa8a",
+            data_missing: true,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Almudron",
             color: "#343d33",
             data_missing: true,
@@ -401,6 +426,31 @@ monster_list = [
             },
         },
         {
+            name: "Nargacuga",
+            color: "#000333",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            resist: {
+                dragon: true,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Pukei-Pukei",
             color: "#19ffba",
             data_missing: false,
@@ -633,6 +683,31 @@ monster_list = [
                 dragon: false,
                 fire: false,
                 ice: false,
+                lightning: false,
+                water: true,
+            },
+            resist: {
+                dragon: true,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Zinogre",
+            color: "#34ebe5",
+            data_missing: false,
+            weakness: {
+                dragon: false,
+                fire: false,
+                ice: true,
                 lightning: false,
                 water: true,
             },
