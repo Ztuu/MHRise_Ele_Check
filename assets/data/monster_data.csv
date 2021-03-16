@@ -1,22 +1,31 @@
-Anjanath,wi,f,,b,,,#9c4346,x
-Arzuros,fi,d,,,,,#1226ff,
-Barioth,fl,i,,,,,#bdbdbd,x
-Bishaten ,,,,,,x,#77ad4e,x
-Great Izuchi,,,,,,x,#d6a100,x
-Great Wroggi,wi,fd,,p,,,#f5aa42,
-Goss Harag,,,,,,x,#e0e0e0,x
-Jyuratodus,l,,,bs,px,,#8a6300,x
-Jyuratodus (Mud Covered),w,f,,bs,px,,#8a6300,x
-Khezu,f,l,,,,,#969696,
-Lagombi,fl,wid,,,,,#00085e,
-Magnamalo,,,,,,x,#6a19ff,x
-Mizutsune,ld,w,,,,,#ffc4fd,
-Pukei-Pukei,li,w,,p,sx,,#19ffba,x
-Rathalos,ld,f,,pb,sx,,#ff0000,x
-Rathian,ld,f,,pb,sx,,#0abf00,x
-Somnacanth,,,,,,x,#924ea3,x
-Tetranadon,,,,,,x,#8bfca9,x
-Tigrex,l,f,,,,,#ff8400,x
-Tobi Kadachi,w,l,,,p,,#70eeff,x
-Test all icons,ldfiw,ldfiw,bpxs,bpxs,bpxs,,#9c4346,x
-Test no icons,,,,,,,#9c4346,x
+Aknosom,,,,,,x,#ebaa8a
+Almudron,,,,,,x,#343d33
+Anjanath,wi,f,,b,,,#9c4346
+Arzuros,fi,d,,,p,,#1226ff
+Barioth,fl,i,,,,,#bdbdbd
+Basarios,wd,,,px,,,#545454
+Bishaten ,,,,,,x,#77ad4e
+Diablos,i,f,,,x,,#cfb846
+Great Izuchi,,,,,,x,#d6a100
+Great Wroggi,wi,fd,,p,,,#f5aa42
+Goss Harag,,,,,,x,#e0e0e0
+Jyuratodus,l,,,bs,px,,#8a6300
+Jyuratodus (Mud Covered),w,f,,bs,px,,#8a6300
+Khezu,f,l,,sx,pb,,#969696
+Lagombi,fl,wid,,s,x,,#00085e
+Magnamalo,,,,,,x,#6a19ff
+Mizutsune,ld,w,,,,,#ffc4fd
+Nargacuga,ft,wid,,,,,#000333
+Pukei-Pukei,li,w,,p,sx,,#19ffba
+Rajang,i,fld,,psx,b,,#42320d
+Rakna-Kadaki,,,,,,x,#1c1c1c
+Rathalos,ld,f,,pb,sx,,#ff0000
+Rathian,ld,f,,pb,sx,,#0abf00
+Somnacanth,,,,,,x,#924ea3
+Tetranadon,,,,,,x,#8bfca9
+Tigrex,l,f,,,,,#ff8400
+Tobi Kadachi,w,l,,,p,,#70eeff
+Volvidon,w,fd,,,,,#d63333
+Zinogre,iw,tfd,,x,,,#34ebe5
+Test all icons,ldfiw,ldfiw,bpxs,bpxs,bpxs,,#9c4346
+Test no icons,,,,,,,#9c4346
