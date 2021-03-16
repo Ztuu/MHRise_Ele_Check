@@ -77,10 +77,12 @@ function DetailDisplay({monster_id}) {
   return (
     <View style={styles.detailDisplay}>
       <CustomText text="Elemental Damage" bold="true" style={styles.sectionHeading} />
-      <IconDisplay heading_text="Weaknesses" icon_dict={monster.weakness} />
-      <IconDisplay heading_text="Resists" icon_dict={monster.resist} />
+      <IconDisplay heading_text="Weaknesses" icon_dict={monster.ele_weakness} />
+      <IconDisplay heading_text="Resists" icon_dict={monster.ele_resist} />
 
       <CustomText text="Status Ailments" bold="true" style={styles.sectionHeading} />
+      <IconDisplay heading_text="Most Resisted" icon_dict={monster.most_resist} />
+      <IconDisplay heading_text="Least Resisted" icon_dict={monster.least_resist} />
       <IconDisplay heading_text="Immune" icon_dict={monster.immune} />
     </View>
   )
