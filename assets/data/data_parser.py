@@ -9,14 +9,14 @@ with open("monster_data.csv", 'r') as datafile:
             "name": "",
             "color": "",
             "data_missing": True,
-            "weakness": {
+            "ele_weakness": {
                 "dragon": False,
                 "fire": False,
                 "ice": False,
                 "lightning": False,
                 "Water": False
             },
-            "resist": {
+            "ele_resist": {
                 "dragon": False,
                 "fire": False,
                 "ice": False,
@@ -49,27 +49,27 @@ with open("monster_data.csv", 'r') as datafile:
             elif i==1:
                 # Weak
                 if "d" in line[i]:
-                    monster["weakness"]["dragon"] = True
+                    monster["ele_weakness"]["dragon"] = True
                 if "f" in line[i]:
-                    monster["weakness"]["fire"] = True
+                    monster["ele_weakness"]["fire"] = True
                 if "i" in line[i]:
-                    monster["weakness"]["ice"] = True
+                    monster["ele_weakness"]["ice"] = True
                 if "l" in line[i]:
-                    monster["weakness"]["lightning"] = True
+                    monster["ele_weakness"]["lightning"] = True
                 if "w" in line[i]:
-                    monster["weakness"]["water"] = True
+                    monster["ele_weakness"]["water"] = True
             elif i==2:
                 # Resist
                 if "d" in line[i]:
-                    monster["resist"]["dragon"] = True
+                    monster["ele_resist"]["dragon"] = True
                 if "f" in line[i]:
-                    monster["resist"]["fire"] = True
+                    monster["ele_resist"]["fire"] = True
                 if "i" in line[i]:
-                    monster["resist"]["ice"] = True
+                    monster["ele_resist"]["ice"] = True
                 if "l" in line[i]:
-                    monster["resist"]["lightning"] = True
+                    monster["ele_resist"]["lightning"] = True
                 if "w" in line[i]:
-                    monster["resist"]["water"] = True
+                    monster["ele_resist"]["water"] = True
             elif i==3:
                 # Immune
                 if "b" in line[i]:
@@ -111,19 +111,19 @@ with open("monster_data.csv", 'r') as datafile:
             name: "{monster.get("name")}",
             color: "{monster.get("color")}",
             data_missing: {'true' if monster.get("data_missing") else 'false'},
-            weakness: {{
-                dragon: {'true' if monster.get("weakness", {}).get("dragon") else 'false'},
-                fire: {'true' if monster.get("weakness", {}).get("fire") else 'false'},
-                ice: {'true' if monster.get("weakness", {}).get("ice") else 'false'},
-                lightning: {'true' if monster.get("weakness", {}).get("lightning") else 'false'},
-                water: {'true' if monster.get("weakness", {}).get("water") else 'false'},
+            ele_weakness: {{
+                dragon: {'true' if monster.get("ele_weakness", {}).get("dragon") else 'false'},
+                fire: {'true' if monster.get("ele_weakness", {}).get("fire") else 'false'},
+                ice: {'true' if monster.get("ele_weakness", {}).get("ice") else 'false'},
+                lightning: {'true' if monster.get("ele_weakness", {}).get("lightning") else 'false'},
+                water: {'true' if monster.get("ele_weakness", {}).get("water") else 'false'},
             }},
-            resist: {{
-                dragon: {'true' if monster.get("resist", {}).get("dragon") else 'false'},
-                fire: {'true' if monster.get("resist", {}).get("fire") else 'false'},
-                ice: {'true' if monster.get("resist", {}).get("ice") else 'false'},
-                lightning: {'true' if monster.get("resist", {}).get("lightning") else 'false'},
-                water: {'true' if monster.get("resist", {}).get("water") else 'false'},
+            ele_resist: {{
+                dragon: {'true' if monster.get("ele_resist", {}).get("dragon") else 'false'},
+                fire: {'true' if monster.get("ele_resist", {}).get("fire") else 'false'},
+                ice: {'true' if monster.get("ele_resist", {}).get("ice") else 'false'},
+                lightning: {'true' if monster.get("ele_resist", {}).get("lightning") else 'false'},
+                water: {'true' if monster.get("ele_resist", {}).get("water") else 'false'},
             }},
             immune: {{
                 blast: {'true' if monster.get("immune", {}).get("blast") else 'false'},
