@@ -23,3 +23,5 @@ I keep the monster data in this [spreadsheet](https://docs.google.com/spreadshee
 * [Expo Docs](https://docs.expo.io/)
 * [Expo Google Fonts](https://github.com/expo/google-fonts)
 * [Store Listing](https://play.google.com/store/apps/details?id=io.itch.ztuu.ele_check_mhrise)
+
+![](/assets//element_icons/dragon.png) ![](/assets//element_icons/fire.png) ![](/assets//element_icons/water.png) ![](/assets//element_icons/lightning.png) ![](/assets//element_icons/ice.png) ![](/assets//status_icons/blast.png) ![](/assets//status_icons/paralysis.png) ![](/assets//status_icons/poison.png) ![](/assets//status_icons/sleep.png) 
