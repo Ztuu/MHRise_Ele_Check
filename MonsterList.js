@@ -3,17 +3,17 @@ monster_list = [
 {
             name: "Aknosom",
             color: "#ebaa8a",
-            data_missing: true,
+            data_missing: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
                 ice: false,
-                lightning: false,
-                water: false,
+                lightning: true,
+                water: true,
             },
             ele_resist: {
-                dragon: false,
-                fire: false,
+                dragon: true,
+                fire: true,
                 ice: false,
                 lightning: false,
                 water: false,
@@ -26,9 +26,9 @@ monster_list = [
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             least_resist: {
                 blast: false,
@@ -143,9 +143,9 @@ monster_list = [
             },
             least_resist: {
                 blast: false,
-                paralysis: false,
+                paralysis: true,
                 poison: true,
-                sleep: false
+                sleep: true
             },
         },
         {
@@ -182,6 +182,43 @@ monster_list = [
                 blast: false,
                 paralysis: false,
                 poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Barroth",
+            color: "#ad8800",
+            data_missing: false,
+            ele_weakness: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: true
+            },
+            least_resist: {
+                blast: true,
+                paralysis: true,
+                poison: true,
                 sleep: false
             },
         },
@@ -297,18 +334,55 @@ monster_list = [
             },
         },
         {
-            name: "Great Izuchi",
-            color: "#d6a100",
-            data_missing: true,
+            name: "Great Baggi",
+            color: "#3784a6",
+            data_missing: false,
             ele_weakness: {
                 dragon: false,
-                fire: false,
+                fire: true,
                 ice: false,
                 lightning: false,
                 water: false,
             },
             ele_resist: {
+                dragon: true,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: true
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: true,
+                sleep: false
+            },
+            least_resist: {
+                blast: true,
+                paralysis: true,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Great Izuchi",
+            color: "#d6a100",
+            data_missing: false,
+            ele_weakness: {
                 dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: true,
+            },
+            ele_resist: {
+                dragon: true,
                 fire: false,
                 ice: false,
                 lightning: false,
@@ -328,9 +402,9 @@ monster_list = [
             },
             least_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
         },
         {
@@ -354,7 +428,7 @@ monster_list = [
             immune: {
                 blast: false,
                 paralysis: false,
-                poison: false,
+                poison: true,
                 sleep: false
             },
             most_resist: {
@@ -365,9 +439,9 @@ monster_list = [
             },
             least_resist: {
                 blast: false,
-                paralysis: false,
+                paralysis: true,
                 poison: false,
-                sleep: false
+                sleep: true
             },
         },
         {
@@ -509,12 +583,49 @@ monster_list = [
                 blast: false,
                 paralysis: true,
                 poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: true,
+                sleep: true
+            },
+        },
+        {
+            name: "Kulu-Ya-Ku",
+            color: "#ffd9a3",
+            data_missing: false,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: true,
+                poison: true,
                 sleep: true
             },
             least_resist: {
-                blast: true,
+                blast: false,
                 paralysis: false,
-                poison: true,
+                poison: false,
                 sleep: false
             },
         },
@@ -549,9 +660,9 @@ monster_list = [
                 sleep: true
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: true,
-                poison: false,
+                poison: true,
                 sleep: false
             },
         },
@@ -637,7 +748,7 @@ monster_list = [
                 dragon: false,
                 fire: true,
                 ice: false,
-                lightning: false,
+                lightning: true,
                 water: false,
             },
             ele_resist: {
@@ -852,6 +963,43 @@ monster_list = [
             },
         },
         {
+            name: "Royal Ludroth",
+            color: "#c2c43b",
+            data_missing: false,
+            ele_weakness: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: true,
+                poison: true,
+                sleep: true
+            },
+        },
+        {
             name: "Somnacanth",
             color: "#924ea3",
             data_missing: true,
@@ -891,20 +1039,20 @@ monster_list = [
         {
             name: "Tetranadon",
             color: "#8bfca9",
-            data_missing: true,
+            data_missing: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
                 ice: false,
-                lightning: false,
+                lightning: true,
                 water: false,
             },
             ele_resist: {
-                dragon: false,
+                dragon: true,
                 fire: false,
                 ice: false,
                 lightning: false,
-                water: false,
+                water: true,
             },
             immune: {
                 blast: false,
@@ -915,12 +1063,12 @@ monster_list = [
             most_resist: {
                 blast: false,
                 paralysis: false,
-                poison: false,
-                sleep: false
+                poison: true,
+                sleep: true
             },
             least_resist: {
                 blast: false,
-                paralysis: false,
+                paralysis: true,
                 poison: false,
                 sleep: false
             },
@@ -1051,7 +1199,7 @@ monster_list = [
                 dragon: true,
                 fire: true,
                 ice: false,
-                lightning: false,
+                lightning: true,
                 water: false,
             },
             immune: {
@@ -1069,10 +1217,11 @@ monster_list = [
             least_resist: {
                 blast: false,
                 paralysis: false,
-                poison: false,
+                poison: true,
                 sleep: false
             },
-        }
+        },
+
 ]
 
 for(let i=0; i<monster_list.length; i++){
