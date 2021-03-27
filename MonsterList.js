@@ -262,35 +262,35 @@ monster_list = [
         {
             name: "Bishaten ",
             color: "#77ad4e",
-            data_missing: true,
+            data_missing: false,
             ele_weakness: {
                 dragon: false,
-                fire: false,
-                ice: false,
+                fire: true,
+                ice: true,
                 lightning: false,
                 water: false,
             },
             ele_resist: {
-                dragon: false,
+                dragon: true,
                 fire: false,
                 ice: false,
                 lightning: false,
-                water: false,
+                water: true,
             },
             immune: {
                 blast: false,
                 paralysis: false,
-                poison: false,
+                poison: true,
                 sleep: false
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
+                paralysis: true,
                 poison: false,
-                sleep: false
+                sleep: true
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
@@ -1002,35 +1002,35 @@ monster_list = [
         {
             name: "Somnacanth",
             color: "#924ea3",
-            data_missing: true,
+            data_missing: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
                 ice: false,
-                lightning: false,
+                lightning: true,
                 water: false,
             },
             ele_resist: {
-                dragon: false,
+                dragon: true,
                 fire: false,
-                ice: false,
+                ice: true,
                 lightning: false,
-                water: false,
+                water: true,
             },
             immune: {
                 blast: false,
                 paralysis: false,
                 poison: false,
-                sleep: false
+                sleep: true
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
+                paralysis: true,
+                poison: true,
                 sleep: false
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
