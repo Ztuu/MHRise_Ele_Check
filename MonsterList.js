@@ -40,11 +40,11 @@ monster_list = [
         {
             name: "Almudron",
             color: "#343d33",
-            data_missing: true,
+            data_missing: false,
             ele_weakness: {
                 dragon: false,
-                fire: false,
-                ice: false,
+                fire: true,
+                ice: true,
                 lightning: false,
                 water: false,
             },
@@ -52,20 +52,20 @@ monster_list = [
                 dragon: false,
                 fire: false,
                 ice: false,
-                lightning: false,
-                water: false,
+                lightning: true,
+                water: true,
             },
             immune: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             least_resist: {
                 blast: false,
@@ -447,20 +447,20 @@ monster_list = [
         {
             name: "Goss Harag",
             color: "#e0e0e0",
-            data_missing: true,
+            data_missing: false,
             ele_weakness: {
                 dragon: false,
-                fire: false,
+                fire: true,
                 ice: false,
                 lightning: false,
                 water: false,
             },
             ele_resist: {
-                dragon: false,
+                dragon: true,
                 fire: false,
-                ice: false,
+                ice: true,
                 lightning: false,
-                water: false,
+                water: true,
             },
             immune: {
                 blast: false,
@@ -470,12 +470,12 @@ monster_list = [
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
@@ -729,12 +729,12 @@ monster_list = [
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
@@ -752,7 +752,7 @@ monster_list = [
                 water: false,
             },
             ele_resist: {
-                dragon: true,
+                dragon: false,
                 fire: false,
                 ice: true,
                 lightning: false,
@@ -766,12 +766,12 @@ monster_list = [
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
@@ -798,13 +798,13 @@ monster_list = [
             immune: {
                 blast: false,
                 paralysis: false,
-                poison: false,
+                poison: true,
                 sleep: false
             },
             most_resist: {
                 blast: false,
                 paralysis: false,
-                poison: true,
+                poison: false,
                 sleep: false
             },
             least_resist: {
@@ -907,22 +907,22 @@ monster_list = [
                 water: false,
             },
             immune: {
-                blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
-            },
-            most_resist: {
                 blast: true,
                 paralysis: false,
                 poison: true,
                 sleep: false
             },
-            least_resist: {
+            most_resist: {
                 blast: false,
                 paralysis: true,
                 poison: false,
                 sleep: true
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
             },
         },
         {
@@ -1204,20 +1204,20 @@ monster_list = [
             },
             immune: {
                 blast: false,
-                paralysis: false,
+                paralysis: true,
                 poison: false,
                 sleep: false
             },
             most_resist: {
                 blast: false,
-                paralysis: true,
-                poison: false,
-                sleep: false
-            },
-            least_resist: {
-                blast: false,
                 paralysis: false,
                 poison: true,
+                sleep: true
+            },
+            least_resist: {
+                blast: true,
+                paralysis: false,
+                poison: false,
                 sleep: false
             },
         },
