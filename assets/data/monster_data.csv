@@ -1,18 +1,17 @@
 Aknosom,lw,fd,,pxs,,,#ebaa8a
 Almudron,fi,wl,b,psx,,,#343d33
-Anjanath,wi,f,,b,,,#9c4346
+Anjanath,wi,f,b,psx,,,#9c4346
 Arzuros,fi,d,,,psx,,#1226ff
-Barioth,fl,i,,,,,#bdbdbd
+Barioth,fl,wi,,psx,b,,#bdbdbd
 Barroth,f,wl,,s,bpx,,#ad8800
 Basarios,wd,,,px,s,,#545454
 Bishaten ,fi,wd,p,xs,b,,#77ad4e
-Diablos,i,f,,,x,,#cfb846
+Diablos,i,f,,ps,x,,#cfb846
 Great Baggi,f,id,s,p,bx,,#3784a6
 Great Izuchi,lw,d,,,psx,,#d6a100
 Great Wroggi,wi,fd,p,p,sx,,#f5aa42
 Goss Harag,f,wid,,psx,b,,#e0e0e0
-Jyuratodus,l,,,bs,px,,#8a6300
-Jyuratodus (Mud Covered),w,f,,bs,px,,#8a6300
+Jyuratodus,l,w,bs,px,,,#8a6300
 Khezu,f,l,x,s,p,,#969696
 Kulu-Ya-Ku,w,,,pxs,,,#ffd9a3
 Lagombi,fl,wid,,s,bpx,,#00085e
@@ -27,7 +26,7 @@ Rathian,ld,f,pb,sx,,,#0abf00
 Royal Ludroth,f,wd,,,psx,,#c2c43b
 Somnacanth,l,wid,s,px,b,,#924ea3
 Tetranadon,l,dw,,ps,x,,#8bfca9
-Tigrex,l,f,,,,,#ff8400
+Tigrex,l,fi,,psx,b,,#ff8400
 Tobi Kadachi,w,l,,sx,p,,#70eeff
 Volvidon,w,fd,,psx,b,,#d63333
 Zinogre,iw,lfd,x,ps,b,,#34ebe5

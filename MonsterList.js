@@ -93,16 +93,16 @@ monster_list = [
                 water: false,
             },
             immune: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
             },
             most_resist: {
-                blast: true,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                blast: false,
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             least_resist: {
                 blast: false,
@@ -164,7 +164,7 @@ monster_list = [
                 fire: false,
                 ice: true,
                 lightning: false,
-                water: false,
+                water: true,
             },
             immune: {
                 blast: false,
@@ -174,12 +174,12 @@ monster_list = [
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
@@ -323,8 +323,8 @@ monster_list = [
             most_resist: {
                 blast: false,
                 paralysis: false,
-                poison: false,
-                sleep: false
+                poison: true,
+                sleep: true
             },
             least_resist: {
                 blast: false,
@@ -497,61 +497,24 @@ monster_list = [
                 fire: false,
                 ice: false,
                 lightning: false,
-                water: false,
-            },
-            immune: {
-                blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
-            },
-            most_resist: {
-                blast: true,
-                paralysis: false,
-                poison: false,
-                sleep: true
-            },
-            least_resist: {
-                blast: false,
-                paralysis: true,
-                poison: true,
-                sleep: false
-            },
-        },
-        {
-            name: "Jyuratodus (Mud Covered)",
-            color: "#8a6300",
-            data_missing: false,
-            ele_weakness: {
-                dragon: false,
-                fire: false,
-                ice: false,
-                lightning: false,
                 water: true,
             },
-            ele_resist: {
-                dragon: false,
-                fire: true,
-                ice: false,
-                lightning: false,
-                water: false,
-            },
             immune: {
-                blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
-            },
-            most_resist: {
                 blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: true
             },
-            least_resist: {
+            most_resist: {
                 blast: false,
                 paralysis: true,
                 poison: true,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
                 sleep: false
             },
         },
@@ -1087,7 +1050,7 @@ monster_list = [
             ele_resist: {
                 dragon: false,
                 fire: true,
-                ice: false,
+                ice: true,
                 lightning: false,
                 water: false,
             },
@@ -1099,12 +1062,12 @@ monster_list = [
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
