@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, Button, Dimensions, ScrollView, TextInput, Imag
 import { useNavigation } from '@react-navigation/native'
 import AppLoading from 'expo-app-loading';
 import { useFonts, Oswald_400Regular } from '@expo-google-fonts/oswald';
+import * as Linking from 'expo-linking';
 
 // Internal imports
 import CustomButton from './CustomButton'
@@ -95,10 +96,11 @@ export default function ListScreen() {
         {monster_rows.map(monster => (
           <MonsterRow key={monster.id} monster_id={monster.id} monster_name={monster.name} />
         ))}
-        <CustomText style={{paddingBottom: 10, alignSelf: "center", fontSize: 10}} text="End of List" />
-        <CustomText text="This is a pre-release version of this app
-        and some data is not yet available. Please look for an update shortly after
-         Monster Hunter Rise launches!" style={{alignSelf: "center", paddingBottom: 15, paddingHorizontal: screenWidth/15}}/>
+        <View style={{alignItems: "center"}}>
+          <CustomText style={{paddingBottom: 10, fontSize: 10}} text="End of List" />
+          <CustomText text="Thank you for using this app! If you enjoy it please consider leaving a rating/review!" style={{paddingBottom: 15, paddingHorizontal: screenWidth/15}}/>
+          <CustomButton title="Review" onPress={() => Linking.openURL('https://play.google.com/store/apps/details?id=io.itch.ztuu.ele_check_mhrise')} customClass={{marginBottom: 55, width: 125}} />
+        </View>
       </ImageBackground>
     </ScrollView>
   );
