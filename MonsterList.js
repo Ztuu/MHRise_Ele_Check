@@ -817,32 +817,32 @@ monster_list = [
         {
             name: "Rakna-Kadaki",
             color: "#1c1c1c",
-            data_missing: true,
+            data_missing: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
-                ice: false,
+                ice: true,
                 lightning: false,
                 water: false,
             },
             ele_resist: {
-                dragon: false,
-                fire: false,
+                dragon: true,
+                fire: true,
                 ice: false,
-                lightning: false,
+                lightning: true,
                 water: false,
             },
             immune: {
-                blast: false,
+                blast: true,
                 paralysis: false,
-                poison: false,
+                poison: true,
                 sleep: false
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
+                paralysis: true,
                 poison: false,
-                sleep: false
+                sleep: true
             },
             least_resist: {
                 blast: false,
@@ -1000,6 +1000,43 @@ monster_list = [
             },
         },
         {
+            name: "Thunder Serpent Narwa",
+            color: "#fcba03",
+            data_missing: false,
+            ele_weakness: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: true,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: true,
+                poison: true,
+                sleep: true
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: true,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Tetranadon",
             color: "#8bfca9",
             data_missing: false,
@@ -1142,6 +1179,43 @@ monster_list = [
             },
             least_resist: {
                 blast: true,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Wind Serpent Ibushi",
+            color: "#726ff2",
+            data_missing: false,
+            ele_weakness: {
+                dragon: true,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: true,
+                poison: true,
+                sleep: true
+            },
+            least_resist: {
+                blast: false,
                 paralysis: false,
                 poison: false,
                 sleep: false
