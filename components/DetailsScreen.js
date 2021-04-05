@@ -103,7 +103,7 @@ export default function DetailsScreen({route}) {
     data_display = <View>
       <CustomText style={styles.fontSizing} text="Data is Missing!" />
       <CustomText style={styles.fontSizing}
-        text="This is a pre-release version of this app and some data is not yet available. Please look for an update shortly after Monster Hunter Rise launches!"
+        text="Some data may not load until your app is restarted. Please try restarting and check if this data appears. If not, please look for an update soon!"
       />
     </View>;
   }else{
