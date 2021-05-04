@@ -149,6 +149,43 @@ monster_list = [
             },
         },
         {
+            name: "Arzuros(Apex)",
+            color: "#04051f",
+            data_missing: false,
+            ele_weakness: {
+                dragon: false,
+                fire: true,
+                ice: true,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: true,
+                poison: false,
+                sleep: true
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: true,
+                sleep: false
+            },
+            least_resist: {
+                blast: true,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Barioth",
             color: "#bdbdbd",
             data_missing: false,
@@ -260,6 +297,43 @@ monster_list = [
             },
         },
         {
+            name: "Bazelgeuse",
+            color: "#424242",
+            data_missing: false,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: true,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: true,
+                poison: true,
+                sleep: true
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Bishaten ",
             color: "#77ad4e",
             data_missing: false,
@@ -288,6 +362,43 @@ monster_list = [
                 paralysis: true,
                 poison: false,
                 sleep: true
+            },
+            least_resist: {
+                blast: true,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Chameleos",
+            color: "#3d1c4f",
+            data_missing: false,
+            ele_weakness: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: true,
+                poison: true,
+                sleep: true
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
             },
             least_resist: {
                 blast: true,
@@ -593,6 +704,43 @@ monster_list = [
             },
         },
         {
+            name: "Kushala Daora",
+            color: "#757575",
+            data_missing: false,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: true,
+                poison: false,
+                sleep: true
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: true,
+                sleep: false
+            },
+            least_resist: {
+                blast: true,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Lagombi",
             color: "#00085e",
             data_missing: false,
@@ -695,6 +843,43 @@ monster_list = [
                 paralysis: true,
                 poison: true,
                 sleep: true
+            },
+            least_resist: {
+                blast: true,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Mizutsune(Apex)",
+            color: "#3b0645",
+            data_missing: false,
+            ele_weakness: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: true,
+                poison: false,
+                sleep: true
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: true,
+                sleep: false
             },
             least_resist: {
                 blast: true,
@@ -926,6 +1111,43 @@ monster_list = [
             },
         },
         {
+            name: "Rathian(Apex)",
+            color: "#1c0b1f",
+            data_missing: false,
+            ele_weakness: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: true,
+                paralysis: true,
+                poison: true,
+                sleep: true
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Royal Ludroth",
             color: "#c2c43b",
             data_missing: false,
@@ -989,6 +1211,43 @@ monster_list = [
             most_resist: {
                 blast: false,
                 paralysis: true,
+                poison: true,
+                sleep: false
+            },
+            least_resist: {
+                blast: true,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Teostra",
+            color: "#b52626",
+            data_missing: false,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            ele_resist: {
+                dragon: true,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: true,
+                poison: false,
+                sleep: true
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
                 poison: true,
                 sleep: false
             },
