@@ -5,6 +5,7 @@ import { useNavigation } from '@react-navigation/native'
 import AppLoading from 'expo-app-loading';
 import { useFonts, Oswald_400Regular } from '@expo-google-fonts/oswald';
 import * as Linking from 'expo-linking';
+import { CheckBox } from 'react-native';
 
 // Internal imports
 import CustomButton from './CustomButton'
@@ -50,13 +51,14 @@ export default function ListScreen() {
   const navigation = useNavigation();
   const [searchText, setSearchText] = useState('');
   let [monster_rows, setMonsterRows] = useState(monster_list);
-
+  const [sunBreakEnabled, setSunbreak] = useState(false);
 
   // Callback to update the monsters displayed
   const updateSearch = (text) => {
     setSearchText(text);
     let new_list = [];
     for(monster of monster_list){
+      //TODO: Check if sunbreak checkbox enabled
       if(monster.name && monster.name.toUpperCase().match(text.toUpperCase())){
         new_list.push(monster);
       }
@@ -90,6 +92,13 @@ export default function ListScreen() {
           />
           <CustomButton title="X" onPress={()=>updateSearch("")}
             customClass={styles.searchClearButton}
+          />
+        </View>
+        <View style={styles.sunbreakFilter}>
+          <CustomText text="Show Sunbreak Monsters" style={styles.sunbreakText}/>
+          <CheckBox
+            value={sunBreakEnabled}
+            onValueChange={setSunbreak}
           />
         </View>
 
@@ -142,6 +151,16 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     paddingHorizontal: screenWidth/15,
     marginTop: 10,
+  },
+  sunbreakFilter: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: screenWidth/15,
+    marginTop: 10,
+  },
+  sunbreakText: {
+
   },
   searchText: {
     flex: 1,
