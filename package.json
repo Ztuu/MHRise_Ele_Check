@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@expo-google-fonts/oswald": "^0.1.0",
-    "@react-native-community/checkbox": "^0.5.12",
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/native": "^5.9.8",
     "@react-navigation/stack": "^5.14.2",
@@ -26,7 +25,8 @@
     "react-native-reanimated": "~2.3.1",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.10.1",
-    "react-native-web": "0.17.1"
+    "react-native-web": "0.17.1",
+    "expo-checkbox": "~2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

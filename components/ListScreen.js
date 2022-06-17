@@ -1,11 +1,12 @@
 // External imports
+import Checkbox from 'expo-checkbox';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Button, Dimensions, ScrollView, TextInput, ImageBackground} from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 import AppLoading from 'expo-app-loading';
 import { useFonts, Oswald_400Regular } from '@expo-google-fonts/oswald';
 import * as Linking from 'expo-linking';
-import { CheckBox } from 'react-native';
+
 
 // Internal imports
 import CustomButton from './CustomButton'
@@ -94,8 +95,9 @@ export default function ListScreen() {
         </View>
         <View style={styles.sunbreakFilter}>
           <CustomText text="Show Sunbreak Monsters" style={styles.sunbreakText}/>
-          <CheckBox
+          <Checkbox
             value={sunBreakEnabled}
+            color="#d4a62a"
             onValueChange={val => {
               setSunbreak(val);
             }}
@@ -161,7 +163,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: screenWidth/15,
-    marginTop: 10,
+    marginVertical: 10,
   },
   sunbreakText: {
     paddingRight: 5,
