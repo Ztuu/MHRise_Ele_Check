@@ -50,20 +50,15 @@ function MonsterRow(props){
 export default function ListScreen() {
   const navigation = useNavigation();
   const [searchText, setSearchText] = useState('');
-  let [monster_rows, setMonsterRows] = useState(monster_list);
-  const [sunBreakEnabled, setSunbreak] = useState(false);
+  const [sunBreakEnabled, setSunbreak] = useState(true);
+  let monster_rows = [];
 
-  // Callback to update the monsters displayed
-  const updateSearch = (text) => {
-    setSearchText(text);
-    let new_list = [];
-    for(monster of monster_list){
-      //TODO: Check if sunbreak checkbox enabled
-      if(monster.name && monster.name.toUpperCase().match(text.toUpperCase())){
-        new_list.push(monster);
+  for(monster of monster_list){
+    if(monster.name && monster.name.toUpperCase().match(searchText.toUpperCase())){
+      if(sunBreakEnabled || !monster.sunbreak){
+          monster_rows.push(monster);
       }
     }
-    setMonsterRows(new_list);
   }
 
   // Add Button header
@@ -87,10 +82,10 @@ export default function ListScreen() {
             placeholder="Search For Monster"
             value={searchText}
             onChangeText={text => {
-              updateSearch(text);
+              setSearchText(text);
             }}
           />
-          <CustomButton title="X" onPress={()=>updateSearch("")}
+          <CustomButton title="X" onPress={()=>setSearchText("")}
             customClass={styles.searchClearButton}
           />
         </View>
@@ -98,7 +93,9 @@ export default function ListScreen() {
           <CustomText text="Show Sunbreak Monsters" style={styles.sunbreakText}/>
           <CheckBox
             value={sunBreakEnabled}
-            onValueChange={setSunbreak}
+            onValueChange={val => {
+              setSunbreak(val);
+            }}
           />
         </View>
 
@@ -160,7 +157,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   sunbreakText: {
-
+    paddingRight: 5,
   },
   searchText: {
     flex: 1,
