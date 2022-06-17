@@ -35,7 +35,10 @@ function MonsterRow(props){
           {monster.name.charAt(0)}
         </Text>
         </View>
-        <CustomText style={{fontSize: 18}} text={monster.name} />
+        <View style={styles.monsterName}>
+          <CustomText style={{fontSize: 18, paddingRight: 5}} text={monster.name} />
+          {monster.sunbreak && <CustomText style={{fontSize: 18, color: "red"}} text="SB" />}
+        </View>
         <CustomButton
           title=">"
           onPress={() => navigation.navigate('Details', {monster_id: monster.id})}
@@ -130,6 +133,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingVertical: 5,
     paddingHorizontal: screenWidth/15,
+  },
+  monsterName: {
+    flexDirection: "row",
+    color: "red",
   },
   letterIconContainer: {
     borderColor: "#000959",
