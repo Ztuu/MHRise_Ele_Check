@@ -92,7 +92,7 @@ export default function ListScreen() {
             customClass={styles.searchClearButton}
           />
         </View>
-
+        <CustomText style={styles.previewText} text="Look out for the Sunbreak update coming soon! Data will be added after the expansion releases" />
         {monster_rows.map(monster => (
           <MonsterRow key={monster.id} monster_id={monster.id} monster_name={monster.name} />
         ))}
@@ -124,6 +124,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingVertical: 5,
     paddingHorizontal: screenWidth/15,
+  },
+  previewText: {
+    alignSelf: "center",
+    paddingHorizontal: screenWidth/15,
+    color: "#d4a62a"
   },
   letterIconContainer: {
     borderColor: "#000959",
