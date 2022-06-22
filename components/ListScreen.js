@@ -1,7 +1,7 @@
 // External imports
 import Checkbox from 'expo-checkbox';
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Button, Dimensions, ScrollView, TextInput, ImageBackground} from 'react-native';
+import { StyleSheet, Text, View, Button, Dimensions, ScrollView, TextInput, Image, ImageBackground} from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 import AppLoading from 'expo-app-loading';
 import { useFonts, Oswald_400Regular } from '@expo-google-fonts/oswald';
@@ -38,7 +38,7 @@ function MonsterRow(props){
         </View>
         <View style={styles.monsterName}>
           <CustomText style={{fontSize: 18, paddingRight: 5}} text={monster.name} />
-          {monster.sunbreak && <CustomText style={{fontSize: 18, color: "red"}} text="SB" />}
+          {monster.sunbreak && <Image style={{width: 40, height: 40}} source={require("../assets/sunbreak.png")} />}
         </View>
         <CustomButton
           title=">"
@@ -138,6 +138,7 @@ const styles = StyleSheet.create({
   },
   monsterName: {
     flexDirection: "row",
+    alignItems: "center",
     color: "red",
   },
   letterIconContainer: {
