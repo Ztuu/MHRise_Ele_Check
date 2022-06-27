@@ -76,6 +76,12 @@ function DetailDisplay({monster_id}) {
   const monster = monster_dict[monster_id];
   return (
     <View style={styles.detailDisplay}>
+      {monster.sunbreak &&
+        <View style={{flexDirection: "row"}}>
+          <CustomText style={styles.fontSizing} text="Sunbreak Exclusive" />
+          <Image style={{width: 40, height: 40}} source={require("../assets/sunbreak.png")} />
+        </View>
+      }
       <CustomText text="Elemental Damage" bold="true" style={styles.sectionHeading} />
       <IconDisplay heading_text="Weaknesses" icon_dict={monster.ele_weakness} />
       <IconDisplay heading_text="Resists" icon_dict={monster.ele_resist} />
