@@ -93,6 +93,7 @@ export default function ListScreen() {
             customClass={styles.searchClearButton}
           />
         </View>
+
         <View style={styles.sunbreakFilter}>
           <CustomText text="Show Sunbreak Monsters" style={styles.sunbreakText}/>
           <Checkbox
