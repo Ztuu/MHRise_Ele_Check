@@ -9,6 +9,7 @@ with open("monster_data.csv", 'r') as datafile:
             "name": "",
             "color": "",
             "data_missing": True,
+            "sunbreak": True,
             "ele_weakness": {
                 "dragon": False,
                 "fire": False,
@@ -101,16 +102,21 @@ with open("monster_data.csv", 'r') as datafile:
                 if "s" in line[i]:
                     monster["least_resist"]["sleep"] = True
             elif i==6:
+                # Sunbreak
+                if len(line[i]) == 0:
+                    monster["sunbreak"] = False
+            elif i==7:
                 # Data Missing
                 if len(line[i]) == 0:
                     monster["data_missing"] = False
-            elif i==7:
+            elif i==8:
                 # Color
                 monster["color"] = line[i]
         result += f'''{{
             name: "{monster.get("name")}",
             color: "{monster.get("color")}",
             data_missing: {'true' if monster.get("data_missing") else 'false'},
+            sunbreak: {'true' if monster.get("sunbreak") else 'false'},
             ele_weakness: {{
                 dragon: {'true' if monster.get("ele_weakness", {}).get("dragon") else 'false'},
                 fire: {'true' if monster.get("ele_weakness", {}).get("fire") else 'false'},

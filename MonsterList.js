@@ -4,6 +4,7 @@ monster_list = [
             name: "Aknosom",
             color: "#ebaa8a",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -41,6 +42,7 @@ monster_list = [
             name: "Almudron",
             color: "#343d33",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: true,
@@ -78,6 +80,7 @@ monster_list = [
             name: "Anjanath",
             color: "#9c4346",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -115,6 +118,7 @@ monster_list = [
             name: "Arzuros",
             color: "#1226ff",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: true,
@@ -152,6 +156,7 @@ monster_list = [
             name: "Arzuros(Apex)",
             color: "#04051f",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: true,
@@ -186,9 +191,86 @@ monster_list = [
             },
         },
         {
+            name: "Astalos",
+            color: "#64d96d",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Aurora Somnacanth",
+            color: "#5498b8",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: true,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Barioth",
             color: "#bdbdbd",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: true,
@@ -226,6 +308,7 @@ monster_list = [
             name: "Barroth",
             color: "#ad8800",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: true,
@@ -263,6 +346,7 @@ monster_list = [
             name: "Basarios",
             color: "#545454",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: true,
                 fire: false,
@@ -300,6 +384,7 @@ monster_list = [
             name: "Bazelgeuse",
             color: "#424242",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -337,6 +422,7 @@ monster_list = [
             name: "Bishaten ",
             color: "#77ad4e",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: true,
@@ -371,9 +457,48 @@ monster_list = [
             },
         },
         {
+            name: "Blood Orange Bishaten",
+            color: "#d97818",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            ele_resist: {
+                dragon: true,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Chameleos",
             color: "#3d1c4f",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: true,
@@ -411,6 +536,7 @@ monster_list = [
             name: "Crimson Glow Valstrax",
             color: "#fc0f03",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: true,
@@ -445,9 +571,48 @@ monster_list = [
             },
         },
         {
+            name: "Daimyo Hermitaur",
+            color: "#cf321d",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            ele_resist: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: true,
+                poison: false,
+                sleep: true
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: true,
+                sleep: false
+            },
+        },
+        {
             name: "Diablos",
             color: "#cfb846",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -485,6 +650,7 @@ monster_list = [
             name: "Diablos(Apex)",
             color: "#6e5f19",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -519,9 +685,124 @@ monster_list = [
             },
         },
         {
+            name: "Espinas",
+            color: "#789c68",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Garangolm",
+            color: "#9bd420",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            ele_resist: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Gore Magala",
+            color: "#5a25a8",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Great Baggi",
             color: "#3784a6",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: true,
@@ -559,6 +840,7 @@ monster_list = [
             name: "Great Izuchi",
             color: "#d6a100",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -596,6 +878,7 @@ monster_list = [
             name: "Great Wroggi",
             color: "#f5aa42",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -633,6 +916,7 @@ monster_list = [
             name: "Goss Harag",
             color: "#e0e0e0",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: true,
@@ -670,6 +954,7 @@ monster_list = [
             name: "Jyuratodus",
             color: "#8a6300",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -707,6 +992,7 @@ monster_list = [
             name: "Khezu",
             color: "#969696",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: true,
@@ -744,6 +1030,7 @@ monster_list = [
             name: "Kulu-Ya-Ku",
             color: "#ffd9a3",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -781,6 +1068,7 @@ monster_list = [
             name: "Kushala Daora",
             color: "#757575",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -818,6 +1106,7 @@ monster_list = [
             name: "Lagombi",
             color: "#00085e",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: true,
@@ -852,9 +1141,86 @@ monster_list = [
             },
         },
         {
+            name: "Lunagaron",
+            color: "#9debe9",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Magma Almudron",
+            color: "#fc6405",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: true,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Magnamalo",
             color: "#6a19ff",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -889,9 +1255,48 @@ monster_list = [
             },
         },
         {
+            name: "Malzeno",
+            color: "#ed217a",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: true,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Mizutsune",
             color: "#ffc4fd",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: true,
                 fire: false,
@@ -929,6 +1334,7 @@ monster_list = [
             name: "Mizutsune(Apex)",
             color: "#3b0645",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: true,
                 fire: false,
@@ -966,6 +1372,7 @@ monster_list = [
             name: "Nargacuga",
             color: "#000333",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: true,
@@ -1003,6 +1410,7 @@ monster_list = [
             name: "Narwa the Allmother",
             color: "#fcba03",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: true,
                 fire: false,
@@ -1040,6 +1448,7 @@ monster_list = [
             name: "Pukei-Pukei",
             color: "#19ffba",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -1077,6 +1486,7 @@ monster_list = [
             name: "Rajang",
             color: "#42320d",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -1114,6 +1524,7 @@ monster_list = [
             name: "Rakna-Kadaki",
             color: "#1c1c1c",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -1151,6 +1562,7 @@ monster_list = [
             name: "Rathalos",
             color: "#ff0000",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: true,
                 fire: false,
@@ -1188,6 +1600,7 @@ monster_list = [
             name: "Rathalos(Apex)",
             color: "#380804",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: true,
                 fire: false,
@@ -1225,6 +1638,7 @@ monster_list = [
             name: "Rathian",
             color: "#0abf00",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: true,
                 fire: false,
@@ -1262,6 +1676,7 @@ monster_list = [
             name: "Rathian(Apex)",
             color: "#1c0b1f",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: true,
                 fire: false,
@@ -1299,6 +1714,7 @@ monster_list = [
             name: "Royal Ludroth",
             color: "#c2c43b",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: true,
@@ -1333,9 +1749,86 @@ monster_list = [
             },
         },
         {
+            name: "Seregios",
+            color: "#f5d533",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Shogun Ceanataur",
+            color: "#51b1ed",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            ele_resist: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Somnacanth",
             color: "#924ea3",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -1373,6 +1866,7 @@ monster_list = [
             name: "Teostra",
             color: "#b52626",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -1410,6 +1904,7 @@ monster_list = [
             name: "Thunder Serpent Narwa",
             color: "#fcba03",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: true,
                 fire: false,
@@ -1447,6 +1942,7 @@ monster_list = [
             name: "Tetranadon",
             color: "#8bfca9",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -1484,6 +1980,7 @@ monster_list = [
             name: "Tigrex",
             color: "#ff8400",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -1521,6 +2018,7 @@ monster_list = [
             name: "Tobi Kadachi",
             color: "#70eeff",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -1558,6 +2056,7 @@ monster_list = [
             name: "Volvidon",
             color: "#d63333",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -1595,6 +2094,7 @@ monster_list = [
             name: "Wind Serpent Ibushi",
             color: "#726ff2",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: true,
                 fire: true,
@@ -1632,6 +2132,7 @@ monster_list = [
             name: "Zinogre",
             color: "#34ebe5",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,
@@ -1669,6 +2170,7 @@ monster_list = [
             name: "Zinogre(Apex)",
             color: "#fcba03",
             data_missing: false,
+            sunbreak: false,
             ele_weakness: {
                 dragon: false,
                 fire: false,

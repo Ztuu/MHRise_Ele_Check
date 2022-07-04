@@ -1,10 +1,12 @@
 // External imports
+import Checkbox from 'expo-checkbox';
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Button, Dimensions, ScrollView, TextInput, ImageBackground} from 'react-native';
+import { StyleSheet, Text, View, Button, Dimensions, ScrollView, TextInput, Image, ImageBackground} from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 import AppLoading from 'expo-app-loading';
 import { useFonts, Oswald_400Regular } from '@expo-google-fonts/oswald';
 import * as Linking from 'expo-linking';
+
 
 // Internal imports
 import CustomButton from './CustomButton'
@@ -34,7 +36,10 @@ function MonsterRow(props){
           {monster.name.charAt(0)}
         </Text>
         </View>
-        <CustomText style={{fontSize: 18}} text={monster.name} />
+        <View style={styles.monsterName}>
+          <CustomText style={{fontSize: 18, paddingRight: 5}} text={monster.name} />
+          {monster.sunbreak && <Image style={{width: 40, height: 40}} source={require("../assets/sunbreak.png")} />}
+        </View>
         <CustomButton
           title=">"
           onPress={() => navigation.navigate('Details', {monster_id: monster.id})}
@@ -49,19 +54,15 @@ function MonsterRow(props){
 export default function ListScreen() {
   const navigation = useNavigation();
   const [searchText, setSearchText] = useState('');
-  let [monster_rows, setMonsterRows] = useState(monster_list);
+  const [sunBreakEnabled, setSunbreak] = useState(true);
+  let monster_rows = [];
 
-
-  // Callback to update the monsters displayed
-  const updateSearch = (text) => {
-    setSearchText(text);
-    let new_list = [];
-    for(monster of monster_list){
-      if(monster.name && monster.name.toUpperCase().match(text.toUpperCase())){
-        new_list.push(monster);
+  for(monster of monster_list){
+    if(monster.name && monster.name.toUpperCase().match(searchText.toUpperCase())){
+      if(sunBreakEnabled || !monster.sunbreak){
+          monster_rows.push(monster);
       }
     }
-    setMonsterRows(new_list);
   }
 
   // Add Button header
@@ -85,14 +86,25 @@ export default function ListScreen() {
             placeholder="Search For Monster"
             value={searchText}
             onChangeText={text => {
-              updateSearch(text);
+              setSearchText(text);
             }}
           />
-          <CustomButton title="X" onPress={()=>updateSearch("")}
+          <CustomButton title="X" onPress={()=>setSearchText("")}
             customClass={styles.searchClearButton}
           />
         </View>
-        <CustomText style={styles.previewText} text="Look out for the Sunbreak update coming soon! Data will be added after the expansion releases" />
+
+        <View style={styles.sunbreakFilter}>
+          <CustomText text="Show Sunbreak Monsters" style={styles.sunbreakText}/>
+          <Checkbox
+            value={sunBreakEnabled}
+            color="#d4a62a"
+            onValueChange={val => {
+              setSunbreak(val);
+            }}
+          />
+        </View>
+
         {monster_rows.map(monster => (
           <MonsterRow key={monster.id} monster_id={monster.id} monster_name={monster.name} />
         ))}
@@ -125,10 +137,10 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     paddingHorizontal: screenWidth/15,
   },
-  previewText: {
-    alignSelf: "center",
-    paddingHorizontal: screenWidth/15,
-    color: "#d4a62a"
+  monsterName: {
+    flexDirection: "row",
+    alignItems: "center",
+    color: "red",
   },
   letterIconContainer: {
     borderColor: "#000959",
@@ -147,6 +159,16 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     paddingHorizontal: screenWidth/15,
     marginTop: 10,
+  },
+  sunbreakFilter: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: screenWidth/15,
+    marginVertical: 10,
+  },
+  sunbreakText: {
+    paddingRight: 5,
   },
   searchText: {
     flex: 1,
