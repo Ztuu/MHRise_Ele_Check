@@ -3,20 +3,22 @@ Almudron,fi,wl,b,psx,,,,#343d33
 Anjanath,wi,f,b,psx,,,,#9c4346
 Arzuros,fi,d,,,psx,,,#1226ff
 Arzuros(Apex),fi,wd,sx,p,b,,,#04051f
-Astalos,,,,,,x,x,#64d96d
+Astalos,i,l,,,,x,,#64d96d
+Aurora Somnacanth,f,wid,,,,x,,#5498b8
 Barioth,fl,wi,,psx,b,,,#bdbdbd
 Barroth,f,wl,,s,bpx,,,#ad8800
 Basarios,wd,,,px,s,,,#545454
 Bazelgeuse,l,f,b,psx,,,,#424242
 Bishaten ,fi,wd,p,xs,b,,,#77ad4e
-Blood Orange Bishaten,,,,,,x,x,#d97818
+Blood Orange Bishaten,wd,fd,,,,x,,#d97818
 Chameleos,f,wi,psx,,b,,,#3d1c4f
 Crimson Glow Valstrax,fwil,d,psx,,b,,,#fc0f03
-Daimyo Hermitaur,,,,,,x,x,
+Daimyo Hermitaur,fl,wd,,xs,p,x,,#cf321d
 Diablos,i,f,,ps,x,,,#cfb846
 Diablos(Apex),i,f,x,ps,b,,,#6e5f19
-Garangolm,,,,,,x,x,#9bd420
-Gore Magala,,,,,,x,x,
+Espinas,i,f,,,,x,,#789c68
+Garangolm,l,wd,,,,x,,#9bd420
+Gore Magala,f,w,,,,x,,#5a25a8
 Great Baggi,f,id,s,p,bx,,,#3784a6
 Great Izuchi,lw,d,,,psx,,,#d6a100
 Great Wroggi,wi,fd,p,p,sx,,,#f5aa42
@@ -26,9 +28,10 @@ Khezu,f,l,x,s,p,,,#969696
 Kulu-Ya-Ku,w,,,pxs,,,,#ffd9a3
 Kushala Daora,l,wi,sx,p,b,,,#757575
 Lagombi,fl,wid,,s,bpx,,,#00085e
-Lunagaron,,,,,,x,x,#9debe9
+Lunagaron,f,wi,,,,x,,#9debe9
+Magma Almudron,wi,f,,,,x,,#fc6405
 Magnamalo,w,fd,b,psx,,,,#6a19ff
-Malzeno,,,,,,x,x,#ed217a
+Malzeno,d,wl,,,,x,,#ed217a
 Mizutsune,ld,w,,psx,b,,,#ffc4fd
 Mizutsune(Apex),ld,w,sx,p,b,,,#3b0645
 Nargacuga,fl,wi,,psx,b,,,#000333
@@ -41,8 +44,8 @@ Rathalos(Apex),ld,f,psxb,,,,,#380804
 Rathian,ld,f,pb,sx,,,,#0abf00
 Rathian(Apex),ld,f,psxb,,,,,#1c0b1f
 Royal Ludroth,f,wd,,,psx,,,#c2c43b
-Seregios,,,,,,x,x,
-Shogun Ceanataur,,,,,,x,x,#51b1ed
+Seregios,l,f,,,,x,,#f5d533
+Shogun Ceanataur,l,d,,,,x,,#51b1ed
 Somnacanth,l,wid,s,px,b,,,#924ea3
 Teostra,w,fd,sx,p,b,,,#b52626
 Thunder Serpent Narwa,d,lfw,psx,,b,,,#fcba03
@@ -53,5 +56,3 @@ Volvidon,w,fd,,psx,b,,,#d63333
 Wind Serpent Ibushi,df,l,,psx,,,,#726ff2
 Zinogre,iw,lfd,x,ps,b,,,#34ebe5
 Zinogre(Apex),iw,lfd,sx,p,b,,,#fcba03
-Almudron variant, ,,,,,x,x,
-Somnacanth variant,,,,,,x,x,
