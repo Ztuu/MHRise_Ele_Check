@@ -212,17 +212,17 @@ monster_list = [
             immune: {
                 blast: false,
                 paralysis: false,
-                poison: false,
+                poison: true,
                 sleep: false
             },
             most_resist: {
                 blast: false,
                 paralysis: false,
-                poison: false,
-                sleep: false
+                poison: true,
+                sleep: true
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
@@ -251,16 +251,16 @@ monster_list = [
                 blast: false,
                 paralysis: false,
                 poison: false,
-                sleep: false
+                sleep: true
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
+                paralysis: true,
+                poison: true,
                 sleep: false
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
@@ -462,7 +462,7 @@ monster_list = [
             data_missing: false,
             sunbreak: true,
             ele_weakness: {
-                dragon: true,
+                dragon: false,
                 fire: false,
                 ice: false,
                 lightning: false,
@@ -483,12 +483,12 @@ monster_list = [
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
@@ -706,8 +706,46 @@ monster_list = [
             immune: {
                 blast: false,
                 paralysis: false,
+                poison: true,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: true,
+                poison: false,
+                sleep: true
+            },
+            least_resist: {
+                blast: true,
+                paralysis: false,
                 poison: false,
                 sleep: false
+            },
+        },
+        {
+            name: "Furious Rajang",
+            color: "#fae570",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: true,
+                fire: true,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             most_resist: {
                 blast: false,
@@ -716,7 +754,45 @@ monster_list = [
                 sleep: false
             },
             least_resist: {
+                blast: true,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Gaismagorm",
+            color: "#56dae3",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: true,
+            },
+            immune: {
                 blast: false,
+                paralysis: true,
+                poison: true,
+                sleep: true
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            least_resist: {
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
@@ -749,12 +825,12 @@ monster_list = [
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
@@ -787,12 +863,12 @@ monster_list = [
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
@@ -1167,12 +1243,12 @@ monster_list = [
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
@@ -1198,16 +1274,16 @@ monster_list = [
                 water: false,
             },
             immune: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             least_resist: {
                 blast: false,
@@ -1275,9 +1351,9 @@ monster_list = [
             },
             immune: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             most_resist: {
                 blast: false,
@@ -1286,7 +1362,7 @@ monster_list = [
                 sleep: false
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
@@ -1480,6 +1556,44 @@ monster_list = [
                 paralysis: true,
                 poison: false,
                 sleep: true
+            },
+        },
+        {
+            name: "Pyre Rakna-Kadaki",
+            color: "#b06d00",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            ele_resist: {
+                dragon: true,
+                fire: true,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            immune: {
+                blast: true,
+                paralysis: false,
+                poison: true,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: true,
+                poison: false,
+                sleep: true
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
             },
         },
         {
@@ -1749,6 +1863,44 @@ monster_list = [
             },
         },
         {
+            name: "Scorned Magnamalo",
+            color: "#f266d8",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: true,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: true,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: true,
+                poison: true,
+                sleep: true
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Seregios",
             color: "#f5d533",
             data_missing: false,
@@ -1769,14 +1921,52 @@ monster_list = [
             },
             immune: {
                 blast: false,
-                paralysis: false,
+                paralysis: true,
                 poison: false,
                 sleep: false
             },
             most_resist: {
                 blast: false,
                 paralysis: false,
+                poison: true,
+                sleep: true
+            },
+            least_resist: {
+                blast: true,
+                paralysis: false,
                 poison: false,
+                sleep: false
+            },
+        },
+        {
+            name: "Shagaru Magala",
+            color: "#e0cc4a",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: true,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: false,
+                water: true,
+            },
+            immune: {
+                blast: true,
+                paralysis: true,
+                poison: false,
+                sleep: true
+            },
+            most_resist: {
+                blast: false,
+                paralysis: false,
+                poison: true,
                 sleep: false
             },
             least_resist: {
@@ -1813,12 +2003,12 @@ monster_list = [
             },
             most_resist: {
                 blast: false,
-                paralysis: false,
-                poison: false,
-                sleep: false
+                paralysis: true,
+                poison: true,
+                sleep: true
             },
             least_resist: {
-                blast: false,
+                blast: true,
                 paralysis: false,
                 poison: false,
                 sleep: false
