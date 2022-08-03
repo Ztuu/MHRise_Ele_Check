@@ -218,7 +218,7 @@ monster_list = [
             most_resist: {
                 blast: false,
                 paralysis: false,
-                poison: true,
+                poison: false,
                 sleep: true
             },
             least_resist: {
