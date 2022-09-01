@@ -875,6 +875,44 @@ monster_list = [
             },
         },
         {
+            name: "Gold Rathian",
+            color: "#ffcf4a",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            ele_resist: {
+                dragon: true,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: true,
+                paralysis: false,
+                poison: true,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: true,
+                poison: false,
+                sleep: true
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+        },
+        {
             name: "Great Baggi",
             color: "#3784a6",
             data_missing: false,
@@ -1213,6 +1251,44 @@ monster_list = [
                 blast: true,
                 paralysis: true,
                 poison: true,
+                sleep: false
+            },
+        },
+        {
+            name: "Lucent Nargacuga",
+            color: "#f2e7a5",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: false,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: true,
+                water: false,
+            },
+            immune: {
+                blast: false,
+                paralysis: false,
+                poison: true,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: true,
+                poison: false,
+                sleep: true
+            },
+            least_resist: {
+                blast: true,
+                paralysis: false,
+                poison: false,
                 sleep: false
             },
         },
@@ -1860,6 +1936,82 @@ monster_list = [
                 paralysis: true,
                 poison: true,
                 sleep: true
+            },
+        },
+        {
+            name: "Seething Bazelgeuse",
+            color: "#6aa2c4",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: true,
+                lightning: true,
+                water: false,
+            },
+            ele_resist: {
+                dragon: false,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: true,
+                paralysis: false,
+                poison: false,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: true,
+                poison: true,
+                sleep: false
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: true
+            },
+        },
+        {
+            name: "Silver Rathalos",
+            color: "#cfcfcf",
+            data_missing: false,
+            sunbreak: true,
+            ele_weakness: {
+                dragon: false,
+                fire: false,
+                ice: false,
+                lightning: true,
+                water: true,
+            },
+            ele_resist: {
+                dragon: true,
+                fire: true,
+                ice: false,
+                lightning: false,
+                water: false,
+            },
+            immune: {
+                blast: true,
+                paralysis: false,
+                poison: true,
+                sleep: false
+            },
+            most_resist: {
+                blast: false,
+                paralysis: true,
+                poison: false,
+                sleep: true
+            },
+            least_resist: {
+                blast: false,
+                paralysis: false,
+                poison: false,
+                sleep: false
             },
         },
         {
