@@ -3,8 +3,6 @@ import Checkbox from 'expo-checkbox';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Button, Dimensions, ScrollView, TextInput, Image, ImageBackground} from 'react-native';
 import { useNavigation } from '@react-navigation/native'
-import AppLoading from 'expo-app-loading';
-import { useFonts, Oswald_400Regular } from '@expo-google-fonts/oswald';
 import * as Linking from 'expo-linking';
 
 
@@ -19,35 +17,25 @@ const bgImage = require('../assets/bg_texture.jpg');
 function MonsterRow(props){
   const navigation = useNavigation()
   const monster = monster_dict[props.monster_id];
-  let [googleFontsLoaded] = useFonts({
-    Oswald_400Regular,
-  });
-  let [fontsLoaded] = useFonts({
-    'SuperMario256': require('../assets/fonts/SuperMario256.ttf'),
-  });
 
-  if (!(fontsLoaded && googleFontsLoaded)) {
-    return <AppLoading />;
-  } else {
-    return (
-      <View style={styles.monsterRow} >
-        <View style={styles.letterIconContainer}>
-        <Text style={[styles.letterIcon, {fontFamily: "SuperMario256", color: monster.color ? monster.color : "#000000"}]}>
-          {monster.name.charAt(0)}
-        </Text>
-        </View>
-        <View style={styles.monsterName}>
-          <CustomText style={{fontSize: 18, paddingRight: 5}} text={monster.name} />
-          {monster.sunbreak && <Image style={{width: 40, height: 40}} source={require("../assets/sunbreak.png")} />}
-        </View>
-        <CustomButton
-          title=">"
-          onPress={() => navigation.navigate('Details', {monster_id: monster.id})}
-          customClass={styles.goDetailsButton}
-        />
+  return (
+    <View style={styles.monsterRow} >
+      <View style={styles.letterIconContainer}>
+      <Text style={[styles.letterIcon, {fontFamily: "SuperMario256", color: monster.color ? monster.color : "#000000"}]}>
+        {monster.name.charAt(0)}
+      </Text>
       </View>
-    )
-  }
+      <View style={styles.monsterName}>
+        <CustomText style={{fontSize: 18, paddingRight: 5}} text={monster.name} />
+        {monster.sunbreak && <Image style={{width: 40, height: 40}} source={require("../assets/sunbreak.png")} />}
+      </View>
+      <CustomButton
+        title=">"
+        onPress={() => navigation.navigate('Details', {monster_id: monster.id})}
+        customClass={styles.goDetailsButton}
+      />
+    </View>
+  )
 }
 
 
