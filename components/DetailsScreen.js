@@ -1,6 +1,6 @@
 // External imports
 import React, {useEffect} from 'react';
-import { StyleSheet, Text, View, ScrollView, Dimensions, Image, ImageBackground } from 'react-native';
+import { StyleSheet, View, ScrollView, Dimensions, Image, ImageBackground } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 
 // Internal imports

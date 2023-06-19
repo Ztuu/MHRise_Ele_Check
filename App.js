@@ -1,10 +1,11 @@
 // External imports
-import {React, useCallback} from 'react';
+import React, {useCallback} from 'react';
 import { preventAutoHideAsync, hideAsync } from 'expo-splash-screen';
 import { View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { useFonts, Oswald_400Regular, Oswald_700Bold  } from '@expo-google-fonts/oswald';
+import { useFonts as useOswald, Oswald_400Regular, Oswald_700Bold  } from '@expo-google-fonts/oswald';
+import { useFonts } from 'expo-font'
 
 
 // Internal imports
@@ -46,7 +47,7 @@ function MainStackScreen() {
 
 export default function App() {
   // Load google fonts
-  let [googleFontsLoaded] = useFonts({
+  let [googleFontsLoaded] = useOswald({
     Oswald_400Regular,
     Oswald_700Bold
   });
