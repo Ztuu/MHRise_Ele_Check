@@ -35,6 +35,18 @@
       "eas": {
         "projectId": "d0db9cf3-0ef1-4e44-b15f-520dd82d1478"
       }
-    }
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/SuperMario256.ttf",
+            "node_modules/@expo-google-fonts/oswald/Oswald_400Regular.ttf",
+            "node_modules/@expo-google-fonts/oswald/Oswald_700Bold.ttf"
+          ]
+        }
+      ]
+    ]
   }
 }
