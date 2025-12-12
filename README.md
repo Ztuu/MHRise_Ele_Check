@@ -21,6 +21,7 @@ I keep the monster data in this [spreadsheet](https://docs.google.com/spreadshee
 * [React Native Docs](https://reactnative.dev/docs/getting-started)
 * [React Navigation Docs](https://reactnavigation.org/docs/getting-started)
 * [Expo Docs](https://docs.expo.io/)
+* [Expo upgrading](https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/)
 * [Expo Google Fonts](https://github.com/expo/google-fonts)
 * [Store Listing](https://play.google.com/store/apps/details?id=io.itch.ztuu.ele_check_mhrise)
 
