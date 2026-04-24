@@ -2,7 +2,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 // Internal imports
@@ -11,8 +11,8 @@ import DetailsScreen from './components/DetailsScreen';
 import AboutModal from './components/AboutModal'
 
 
-const MainStack = createStackNavigator();
-const RootStack = createStackNavigator();
+const MainStack = createNativeStackNavigator();
+const RootStack = createNativeStackNavigator();
 
 
 function MainStackScreen() {
@@ -45,8 +45,8 @@ export default function App() {
     <View style={{flex: 1}}>
       <NavigationContainer>
         <RootStack.Navigator mode="modal" headerMode="none">
-          <RootStack.Screen name="Main" component={MainStackScreen} />
-          <RootStack.Screen name="AboutModal" component={AboutModal} />
+          <RootStack.Screen name="Main" component={MainStackScreen} options={{ headerShown: false }}/>
+          <RootStack.Screen name="AboutModal" component={AboutModal} options={{ headerShown: false }}/>
         </RootStack.Navigator>
       </NavigationContainer>
     </View>
